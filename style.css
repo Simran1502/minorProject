@@ -1,0 +1,129 @@
+
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.line{
+    padding-top: 80px;
+}
+
+.main{
+    /* margin: auto 150px auto 150px; */
+    padding: 40px 10px 40px 10px;
+    letter-spacing: 0.015rem;
+}
+.intro{
+    padding-bottom: 20px;
+}
+
+p,ol{
+    line-height: 23px;
+    font-size: 16px;
+    font-family: Nunito,sans-serif;
+} 
+
+.fig1{
+    margin: auto 150px auto 150px;
+    width: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.fig1 img{
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container{
+    padding-right: 100px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color:rgb(93, 68, 193);
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container a{
+    text-decoration: underline;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container  a:hover{
+    color: yellow;
+    font-size: 20px;
+}
+
+.headline{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.indx{
+    display: block;
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.indx a{
+    color: aliceblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.indx a:hover{
+    color: aqua;
+}
+
+table,th,td{
+    margin: 40px;
+    margin-bottom: 10px;
+    padding: 15px 10px 15px 10px;
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+#frame{
+    box-sizing:border-box;
+    border: 1px solid white;
+    margin: 20px;
+    height: 250px;
+    width: auto;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(70, 69, 69);
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
