@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="cyber_style.css">
 </head>
 <body>
+    <div class="container">
     <div class = "line">
         <hr color="white" size="1">
     </div>
@@ -42,9 +43,10 @@
        </p>
     </div>
     <div class="headline"><h2>Types of Cyber Crime</h2> <hr size=".1px" color="gray"></div>
-    <div class = "container" id="index">
-        <span>
-        <ul>
+   
+    <div class = "crime_container" id="index">
+       
+        <ul class =" abc">
             <li>
                 <a href="#section1">Email and internet fraud. </a>
             </li>
@@ -64,11 +66,13 @@
             <li>
                 <a href="#section6">Spoofing</a>
             </li>
+            <li>
+                <a href="#section7">Ransomware</a>
+            </li>
         </ul>
-    </span>
-
-
+    
     </div>
+
     <div class="section one" id="section2">
        <!-- <div class="headline">Email and internet fraud<hr size=".1px" color="gray"></div>-->
         <h2>Email and indentity fraud</h2>
@@ -116,6 +120,7 @@
          </ol>
 
          <ol> 
+         
             <h3>Types of Cyber Extortion</h3>
             <li>Doxing Extortion :
                 In doxing cases, threat actors obtain sensitive, confidential, or embarrassing information about a victim—such as personal photos, emails, or customer data—and threaten to publicly disclose this information unless a ransom is paid. 
@@ -130,6 +135,7 @@
             
          </ol>
           
+         <details></details>
          <ol>
             <h3>Examples of Cyber Extortion</h3>
             <li>Colonial Pipeline Attack (2021): DarkSide, a cybercrime group, perpetrated a ransomware attack on the Colonial Pipeline, the largest pipeline system for refined oil products in the U.S. The attack led to the shutdown of the pipeline, sparking widespread fuel shortages and price hikes. This ransomware attack yielded nearly $5 million in ransom paid by Colonial Pipeline to regain control over their systems.</li><br>
@@ -196,8 +202,8 @@
     <div class="section five" id="section5">
         <h2>DNS Tunneling</h2>
         <ol>
-            <p>DLS tunneling is a type of cyberattack that allows hackers to bypass network security by using the Domain Name System (DNS) as a transport for malicious traffic. By hiding non-DNS traffic within DNS packets, attackers can often bypass network security measures. Successful DNS tunneling attacks allow hackers to bypass network security, exfiltrate data, control other computers, collect user credentials, or explore a network’s footprint for future attacks</p>
-          
+            <p>DNS tunneling is a type of cyberattack that allows hackers to bypass network security by using the Domain Name System (DNS) as a transport for malicious traffic. By hiding non-DNS traffic within DNS packets, attackers can often bypass network security measures. Successful DNS tunneling attacks allow hackers to bypass network security, exfiltrate data, control other computers, collect user credentials, or explore a network’s footprint for future attacks</p>
+            <img src="dns.png" alt="dns" class="dns">
             <h3>How do hackers use DNS tunneling?</h3>
             <li>Installing malware. Attackers may use DNS tunneling to install malware on additional systems.</li>
             <li>Collecting credentials. Once they have command and control of a device, attackers can use keyloggers and other methods to collect user credentials that can be used to mount additional attacks or be sold on the dark web.</li>
@@ -205,7 +211,8 @@
             <li>Exfiltrating data. Cybercriminals may use DNS tunneling to transfer data out of the network, including sensitive or confidential user information.</li>
              <li>Controlling devices. With the ability to control an infected device, attackers can trigger other threats such as DDoS attacks.</li>
 
-             <p>DNS tunneling is challenging to detect because DNS traffic is often allowed to pass through firewalls and other security controls, and legitimate DNS queries are commonly made within networks. Additionally, the use of encryption and encoding techniques makes it harder for traditional security measures to inspect the contents of DNS traffic.</p><br>
+             <p>DNS tunneling is challenging to detect because DNS traffic is often allowed to pass through firewalls and other security controls, and legitimate DNS queries are commonly made within networks. Additionally, the use of encryption and encoding techniques makes it harder for traditional
+                 security measures to inspect the contents of DNS traffic.</p>
         </ol>
 
     </div>
@@ -222,7 +229,7 @@
             <section>
                 <h3>Types of Spoofing</h3>
                 <details>
-                    <summary>IP Spoofing</summary>
+                    <summary >IP Spoofing</summary>
 
                     <p>Attackers can alter their IP address in order to hide their real identity or impersonate another user. This technique is commonly used by advanced adversaries in a DoS attack. Using this technique, attackers alter their IP address in order to flood the victim’s site with traffic, 
                         limiting access for authentic users. <br>
@@ -235,7 +242,7 @@
                         
                          Network attack blockers is also used to work in conjunction with network firewalls. Firewalls authenticate IP addresses, making sure only authorized traffic is permitted, securing private networks. Network attack blockers authenticate the IP addresses of any incoming IP packets, allowing for them to detect any suspicious packets with IP addresses that don’t quite match. 
                          From there, the attack blocker will block the network activity by the IP address accessing your network. 
-                        <img src="ipspoofing.png" alt="ipspoofing" width="400px">
+                        <img src="ipspoofing.png" alt="ipspoofing" class="ipspoof">
                     </p>
 
                 </details>
@@ -276,14 +283,43 @@
                 </ol>
 
             </details>
-            
-
             </section>
 
-
         </ol>
+    </div>
+    <div class="section seven" id="section7">
+        <h2>Ransomware</h2>
+        <p>Ransom malware, or ransomware, is a type of malware that prevents users from accessing their system or personal files and demands ransom payment in order to regain access.
+        ransomware authors order that payment be sent via cryptocurrency or credit card, and attackers target individuals, businesses, and organizations of all kinds.
+    </p>
+    <h3>How do client get Ransomware</h3>
+    <ol>
+        <li>
+            <h3>Malspam:</h3>
+            <p>To gain access, some threat actors use spam, where they send an email with a malicious attachment to as many people as possible, seeing who opens the attachment and “takes the bait,” so to speak.
+                The email might include booby-trapped attachments, such as PDFs or Word documents. It might also contain links to malicious websites.
+            </p>
+
+        </li>
+        <li><h3>Malvertising:</h3>
+            <p> Malvertising, or malicious advertising, is the use of online advertising to distribute malware with little to no user interaction required.
+                While browsing the web, even legitimate sites, users can be directed to criminal servers without ever clicking on an ad. These servers catalog details about victim computers and their locations, and then select the malware best suited to deliver.
+                Malvertising often uses an infected iframe, or invisible webpage element, to do its work. The iframe redirects to an exploit landing page, and malicious code attacks the system from the landing page via exploit kit.
+
+            </p>
+
+        
+        </li>
+        <li><h3>Social Engineering</h3>
+        <p> Threat actors may use social engineering in order to trick people into opening attachments or clicking on links by appearing as legitimate—whether that’s by seeming to be from a trusted institution or a friend</p>
+
+        </li>
+       
+    </ol>
+
 
     </div>
+</div>
     
 
 </body>
