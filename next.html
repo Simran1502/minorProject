@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...">  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="start">
+            
+        <div class="sidenav">
+            <h3>Menu</h3>
+            <ul>
+                <li>
+                    <a href="deeplearn.html#section0">Introduction</a>
+                </li>
+                <li>
+                    <a href="deeplearn.html#section1">Difference between Machine Learning and Deep Learning</a>
+                </li>
+                <li>
+                    <a href="deeplearn.html#section2">Applications of Deep Learning</a>
+                </li>
+                <li>
+                    <a href="deeplearn.html#section3">Challenges in Deep Learning</a>
+                </li>
+                <li>
+                    <a href="deeplearn.html#section4">Pros and cons of Deep Learning</a>
+                </li>
+                <li>
+                    <a href="deeplearn.html#section5">Neural Network</a>
+                </li>
+                <li>
+                    <details id="deeplearn.html#section6">
+                        <summary>Artificial Neural Network</summary>
+                        <li>
+                            <a href="deeplearn.html#section6.1">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section6.2">Relationship between BNN and ANN</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section6.3">Architecture</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section6.4">Pros and Cons</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section6.5">Working</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section6.6">Types of ANN</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <details id="deeplearn.html#section7">
+                        <summary>Convolutional Neural Network</summary>
+                        <li>
+                            <a href="deeplearn.html#section7.1">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section7.2">Working</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section7.3">Types of CNN</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section7.4">Advantages</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section7.5">Disadvantages</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section7.6">Applications</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section7.7">Tools and Frameworks</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <details id="deeplearn.html#section8">
+                        <summary>Recurrent Neural Network</summary>
+                        <li>
+                            <a href="deeplearn.html#section8.1">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section8.2">Architecture</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section8.3">Working</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section8.4">Backpropagation Through Time</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section8.5">Types of RNN</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section8.6">Comparison</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section8.7">Pros and cons</a>
+                        </li>
+                        <li>
+                            <a href="deeplearn.html#section8.8">Applications</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <details id="next.html#section9">
+                        <summary>Region-based Convolutional Neural Network(R-CNN)</summary>
+                        <li>
+                            <a href="next.html#section9.1">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section9.2">Working</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section9.3">
+                                Architecture
+                            </a>
+                        </li>
+                        <li>
+                            <a href="next.html#section9.4">SVM</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section9.5">Challenges</a>
+                        </li>
+                    </details>
+                </li>                       
+                <li>
+                    <details id="next.html#section11">
+                        <summary>Long Short-term Memory Networks</summary>
+                        <li>
+                            <a href="next.html#section11.0">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section11.1">Architecture</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section11.2">Working</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <details id="next.html#section12">
+                        <summary>Activation Functions</summary>
+                        <li>
+                            <a href="next.html#section12.1">Elements</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section12.2">Use</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section12.3">Non-linear activation function</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section12.4">Variants</a>
+                        </li>
+                    </details>
+                </li>                      
+                <li>
+                    <details id="next.html#section14">
+                        <summary>Optimizers</summary>
+                        <li>
+                            <a href="next.html#section14.1">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section14.2">Types</a>
+                        </li>
+                    </details>
+                </li>                    
+                <li>
+                    <details id="next.html#section16">
+                        <summary>Autoencoders</summary>
+                        <li>
+                            <a href="next.html#section16.1">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section16.2">Architecture</a>
+                        </li>
+                        <li>
+                            <a href="next.html#section16.3">Types</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <a href="next.html#section10">Generative Adversarial Networks(GANs)</a>
+                </li>
+                <li>
+                    <a href="next.html#section13">Difference between ANN and BNN</a>
+                </li>
+                <li>
+                    <a href="next.html#section15">Loss Function</a>
+                </li>
+            </ul>
+        </div>
+
+   
+            <div class="main">
+
+                <div class="index glass" id="index">
+                    <ul>
+                        <li>
+                            <a href="#section9">Region-based Convolutional Neural Network(R-CNN)   </a>
+                        </li>
+                        <li>
+                            <a href="#section10">Generative Adversarial Networks(GANs)</a>
+                        </li>
+                        <li>
+                            <a href="#section11">Long Short-term Memory Networks</a>
+                        </li> 
+                        <li>
+                            <a href="#section12">Activation Functions</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#section13">Difference between ANN and BNN
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section14">Optimizers</a>
+                        </li>
+                        <li>
+                            <a href="#section15">Loss Function</a>
+                        </li> 
+                        <li>
+                            <a href="#section16">Autoencoders</a>
+                        </li>   
+                    </ul>
+                    <br>
+                </div>
+                <br>
+
+                <div class="sectionnine" id="section9">
+                    <div class="headline">9. Region-based Convolutional Neural Network(R-CNN)<hr size=".1px" color="gray"></div>
+                    
+                    <div class="intro" id="section9.1">
+                        <h3>9.1. Introduction to R-CNN</h3>
+                        <p>
+                            Since Convolution Neural Network (CNN) with a fully connected layer is not able to deal with the frequency of occurrence and multi objects. So, one way could be that we use a sliding window brute force search to select a region and apply the CNN model to that, but the problem with this approach is that the same object can be represented in an image with different sizes and different aspect ratios. While considering these factors we have a lot of region proposals and if we apply deep learning (CNN) to all those regions that would computationally very expensive.
+                        </p>
+                        <p>
+                            Ross Girshick et al in 2013 proposed an architecture called R-CNN (Region-based CNN) to deal with this challenge of object detection. This R-CNN architecture uses the selective search algorithm that generates approximately 2000 region proposals. These 2000 region proposals are then provided to CNN architecture that computes CNN features. These features are then passed in an SVM model to classify the object present in the region proposal. An extra step is to perform a bounding box regressor to localize the objects present in the image more precisely.
+                        </p>
+    
+                        <div class="fig1">
+                            <img src="https://lh6.googleusercontent.com/L-hLr-fL1mBUzKYMtNOeQZgF0CCw1rmE4230m90o-PctazAed_18_3G9f_FI7Qgo-Z5o3Lf_ZuDwC-YcwpyXpasCAq8xkRB2yHxMucN-sSal7SYsPCiWn558XuRUD2F5xP41h5Stb1Q2xmvHVaSH1LQ" alt="RCNN">
+                            <div class="caption"><i>Fig 9.1</i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="working" id="section9.2">
+                        <h3>
+                            9.2. Working of R-CNN 
+                        </h3>
+                        <p>
+                            The R-CNN Architecture, featuring the steps of taking in an input image, extracting region proposals, computing CNN features, and classifying regions. <br>
+                            <p>Let's dive deeper into how R-CNN works, step by step.</p>
+                        </p>
+
+                        <h4>Region Proposal
+                        </h4>
+                        <p>
+                            R-CNN starts by dividing the input image into multiple regions or subregions. These regions are referred to as "region proposals" or "region candidates." The region proposal step is responsible for generating a set of potential regions in the image that are likely to contain objects. R-CNN does not generate these proposals itself; instead, it relies on external methods like Selective Search or EdgeBoxes to generate region proposals. To reduce the region proposals in the R-CNN uses a greedy algorithm called selective search.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            Selective search is a greedy algorithm that combines smaller segmented regions to generate region proposals. This algorithm takes an image as input and output generates region proposals on it. This algorithm has the advantage over random proposal generation in that it limits the number of proposals to approximately 2000 and these region proposals have a high recall.
+                            <br>
+                            <br>
+                            <p><b>Algorithm</b></p>
+                            <ol type="i">
+                                <li>
+                                    Generate initial sub-segmentation of the input image.
+                                </li>
+                                <li>
+                                    Combine similar bounding boxes into larger ones recursively
+                                </li>
+                                <li>
+                                    Use these larger boxes to generate region proposals for object detection.
+                                </li>
+                            </ol>
+                        </p>
+                        
+                        <br>
+
+                        <p>
+                            Below we show how Selective Search works, which shows an input image, then an image with many segmented masks, then fewer masks, then masks that comprise the main components in the image.
+                        </p>
+
+                        <div class="fig1">
+                            <img src="https://lh4.googleusercontent.com/9sxoZYiy8-hPAaOqj2GR6hbb378HGdgiAchObOYbFXxefp2q8juIfplviG-wV7tZn-0ykoePlAqepCvMgp06963t8I3XPAgOsqvnurHyscKfJ1Z1lDxtKHSgh9eJz_igwZaK7MIWUTNM0XdZd_ur3-g" alt="ANN">
+                            <div class="caption"><i>Fig 9.2.1</i>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <h4>Feature Extraction
+                        </h4>
+                        <p>
+                            Once the region proposals are generated, approximately 2,000 regions are extracted and anisotropically warped to a consistent input size that the CNN expects (e.g., 224x224 pixels) and then it is passed through the CNN to extract features.
+                        </p>
+                        <br>
+                        <p>
+                            Before warping, the region size is expanded to a new size that will result in 16 pixels of context in the warped frame. The CNN used is AlexNet and it is typically fine-tuned on a large dataset like ImageNet for generic feature representation.
+                        </p>
+                        <br>
+                        <p>
+                            The output of the CNN is a high-dimensional feature vector representing the content of the region proposal. 
+                        </p>
+                        <br>
+                        <div class="fig1">
+                            <img src="https://lh6.googleusercontent.com/I2K-Lg5QcQZ2j4b3Pyj8P5cPUD8CFc6ED-wEC5zT0u_jxTkPJc-kK5QufU3_kcIG2wBoGCdUxPvnQPR7SU-3McOMkF9hQqcYYumsi9kMJpQX4SQjou0eELDuINk0suGGLcc083awN1ZLTtxAvbolnZk" alt="RCNN">
+                            <div class="caption"><i>Fig 9.2.2</i></div>
+                        </div>
+
+                        <br>
+
+                        <h4>
+                            Object Classification
+                        </h4>
+                        <p>
+                            The extracted feature vectors from the region proposals are fed into a separate machine learning classifier for each object class of interest. R-CNN typically uses Support Vector Machines (SVMs) for classification. For each class, a unique SVM is trained to determine whether or not the region proposal contains an instance of that class.
+                            <br>
+                            During training, positive samples are regions that contain an instance of the class. Negative samples are regions that do not.
+                        </p>
+
+                        <br>
+
+                        <h4>
+                            Bounding Box Regression
+                        </h4>
+                        <p>
+                            In addition to classifying objects, R-CNN also performs bounding box regression. For each class, a separate regression model is trained to refine the location and size of the bounding box around the detected object. The bounding box regression helps improve the accuracy of object localization by adjusting the initially proposed bounding box to better fit the object's actual boundaries.
+                        </p>
+                        <br>
+                        <p>
+                            In order to precisely locate the bounding box in the image., we used a scale-invariant linear regression model called bounding box regressor. For training this model we take as predicted and Ground truth pairs of four dimensions of localization. These dimensions are (x, y, w, h) where x and y are the pixel coordinates of the center of the bounding box respectively. w and h represent the width and height of bounding boxes. This method increases the Mean Average precision (mAP) of the result by 3-4%.
+                        </p>
+                        <div class="fig2">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200219162610/2020-02-171-1024x959.jpg" alt="RCNN">
+                            <div class="caption"><i>Fig 9.2.3</i>
+                            </div>
+                        </div>
+                        <p><b>Output:</b></p>
+                        <br>
+                            <p>
+                                Now we have region proposals that are classified for every class label. In order to deal with the extra bounding box generated by the above model in the image, we use an algorithm called Non- maximum suppression. It works in 3 steps:
+                                <br>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        Discard those objects where the confidence score is less than a certain threshold value( say 0.5).
+                                    </li>
+                                    <li>
+                                        Select the region which has the highest probability among candidates regions for the object as the predicted region.
+                                    </li>
+                                    <li>
+                                        In the final step, we discard those regions which have IoU (intersection Over Union) with the predicted region over 0.5.
+                                    </li>
+                                </ul>
+                            </p>
+                            
+                            <div class="fig1">
+                                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200219163223/nonmaxsuppression-1024x451.jpg" alt="RCNN">
+                                <div class="caption"><i>Fig 9.2.4</i></div>
+                            </div>
+                            <p>
+                                After that, we can obtain output by plotting these bounding boxes on the input image and labeling objects that are present in bounding boxes. 
+                            </p>
+                            <br>
+                            <p><b>Results</b></p>
+                            <br>
+                            <p>
+                                The R-CNN gives a Mean Average Precision (mAPs) of 53.7% on VOC 2010 dataset. On 200-class ILSVRC 2013 object detection dataset it gives an mAP of 31.4% which is a large improvement from the previous best of 24.3%. However, this architecture is very slow to train and takes ~ 49 sec to generate test results on a single image of the VOC 2007 dataset.
+                            </p>
+
+                        <br>
+
+                        <h4>
+                            Non-Maximum Suppression (NMS)
+                        </h4>
+                        <p>
+                            After classifying and regressing bounding boxes for each region proposal, R-CNN applies non-maximum suppression to eliminate duplicate or highly overlapping bounding boxes. NMS ensures that only the most confident and non-overlapping bounding boxes are retained as final object detections.
+                        </p>
+                        <div class="fig1">
+                            <img src="https://lh3.googleusercontent.com/iacL8NEMFT1jm7LJdsLOzyU8fNF8ZBH81IzoqdnOiB51YnQNbfnwC3O-o3m2Vc0YALdJdeUoSFZmBPHLt2QahmyeNbeCjFgWwoDNKP7e0kBxckb0ILaThE2DLZhNuIPYmpGs1UitXNcYr2bjc7BFXOU" alt="RCNN">
+                            <div class="caption"><i>Fig 9.2.5</i></div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="architecture" id="section9.3">
+                        <h3>
+                            9.3. CNN architecture of R-CNN 
+                        </h3>
+                        <p>
+                            After that these regions are warped into a single square of regions of dimension as required by the CNN model. The CNN model that we used here is a pre-trained AlexNet model, which is the state-of-the-art CNN model at that time for image classification Let’s look at AlexNet architecture here.
+                        </p>
+                        <div class="fig1">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200217183955/new6-1024x450.jpg" alt="RCNN">
+                            <div class="caption"><i>Fig 9.3.1</i></div>
+                        </div>
+                        <p>
+                            Here the input of AlexNet is (227, 227, 3). So, if the region proposals are small and large then we need to resize that region proposal to given dimensions.
+                            <br>
+                            From the above architecture, we remove the last softmax layer to get the (1, 4096) feature vector. We pass this feature vector into SVM and bounding box regressor.
+                            <br>
+                            <div class="fig1">
+                                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200219162206/feature1-1024x450.jpg" alt="RCNN">
+                                <div class="caption"><i>Fig 9.3.2</i></div>
+                            </div>
+                        </p>
+                    </div>
+
+                    <div class="svn" id="section9.4">
+                        <h3>9.4. SVM (Support Vector Machine)</h3>
+                        <p>
+                            The feature vector generated by CNN is then consumed by the binary SVM which is trained on each class independently. This SVM model takes the feature vector generated in previous CNN architecture and outputs a confidence score of the presence of an object in that region. However, there is an issue with training with SVM is that we required AlexNet feature vectors for training the SVM class. So, we could not train AlexNet and SVM independently in paralleled manner. This challenge is resolved in future versions of R-CNN (Fast R-CNN, Faster R-CNN, etc.).
+                        </p>
+                    </div>
+
+                    <div class="challenges" id="section9.5">
+                        <h3>9.5. Challenges of R-CNN</h3>
+                        <ul style="list-style-type: disc;">
+                            <li>
+                                The selective Search algorithm is very rigid and there is no learning happening in that. This sometimes leads to bad region proposal generation for object detection.
+                            </li>
+                            <li>
+                                Since there are approximately 2000 candidate proposals. It takes a lot of time to train the network. Also, we need to train multiple steps separately (CNN architecture, SVM model, bounding box regressor). So, This makes it very slow to implement.
+                            </li>
+                            <li>
+                                R-CNN can not be used in real-time because it takes approximately 50 sec to test an image with a bounding box regressor.
+                            </li>
+                            <li>
+                                Since we need to save feature maps of all the region proposals. It also increases the amount of disk memory required during training.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="indx">
+                    <a href="#index"><i class="fas fa-arrow-circle-up"></i></a>
+                </div>
+
+                <div class="sectionten" id="section10">
+                    <div class="headline">10. Generative Adversarial Networks(GANs)<hr size=".1px" color="gray"></div>
+                    <p>
+                        GAN(Generative Adversarial Network) represents a cutting-edge approach to generative modeling within deep learning, often leveraging architectures like convolutional neural networks. The goal of generative modeling is to autonomously identify patterns in input data, enabling the model to produce new examples that feasibly resemble the original dataset.
+                    </p><br>
+                    <p>
+                        GANs typically run unsupervised and use a cooperative zero-sum game framework to learn, where one person's gain equals another person's loss.
+                    </p><br>
+                    <p>
+                        The two neural networks that make up a GAN are referred to as the generator and the discriminator. The generator is a convolutional neural network and the discriminator is a deconvolutional neural network. The goal of the generator is to artificially manufacture outputs that could easily be mistaken for real data. The goal of the discriminator is to identify which of the outputs it receives have been artificially created.
+                    </p><br>
+                    <p>
+                        Essentially, generative models create their own training data. While the generator is trained to produce false data, the discriminator network is taught to distinguish between the generator's manufactured data and true examples. If the discriminator rapidly recognizes the fake data that the generator produces -- such as an image that isn't a human face -- the generator suffers a penalty. As the feedback loop between the adversarial networks continues, the generator will begin to produce higher-quality and more believable output and the discriminator will become better at flagging data that has been artificially created. 
+                        <br><br>
+                        <iframe width="400" height="315" src="https://www.youtube.com/embed/TpMIssRdhco?si=fu3k72lDAIN0zAri" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </p>
+                    <br>
+                    <p>For detailed information check out <a href="https://youtu.be/Fe1MzID2BNg?si=9TeR_0kkzJkf015x" target="_blank">https://youtu.be/Fe1MzID2BNg?si=9TeR_0kkzJkf015x</a></p>
+                </div>
+
+                <div class="sectioneleven" id="section11">
+                    <div class="headline"> 11. Long Short-term Memory Networks <hr size=".1px" color="gray"></div>
+                    <div class="introduction" id="section11.0">
+                        <p>
+                            Long Short-Term Memory is an improved version of recurrent neural network designed by Hochreiter & Schmidhuber. LSTM is well-suited for sequence prediction tasks and excels in capturing long-term dependencies. Its applications extend to tasks involving time series and sequences. LSTM’s strength lies in its ability to grasp the order dependence crucial for solving intricate problems, such as machine translation and speech recognition. 
+                        </p>
+
+                        <br>
+                         <p>
+                            A traditional RNN has a single hidden state that is passed through time, which can make it difficult for the network to learn long-term dependencies. LSTMs address this problem by introducing a memory cell, which is a container that can hold information for an extended period. LSTM networks are capable of learning long-term dependencies in sequential data, which makes them well-suited for tasks such as language translation, speech recognition, and time series forecasting. LSTMs can also be used in combination with other neural network architectures, such as Convolutional Neural Networks (CNNs) for image and video analysis.
+                         </p>
+
+                         <br>
+                         <p>
+                            The memory cell is controlled by three gates: the input gate, the forget gate, and the output gate. These gates decide what information to add to, remove from, and output from the memory cell. The input gate controls what information is added to the memory cell. The forget gate controls what information is removed from the memory cell. And the output gate controls what information is output from the memory cell. This allows LSTM networks to selectively retain or discard information as it flows through the network, which allows them to learn long-term dependencies.
+                         </p>
+
+                         <br>
+                         <p><b>Bidirectional LSTM :</b></p>
+                         <br>
+                         <p>
+                            Bidirectional LSTM (Bi LSTM/ BLSTM) is recurrent neural network (RNN) that is able to process sequential data in both forward and backward directions. This allows Bi LSTM to learn longer-range dependencies in sequential data than traditional LSTMs, which can only process sequential data in one direction.
+                         </p>
+                         <ul style="list-style-type: disc;">
+                            <li>
+                                Bi LSTMs are made up of two LSTM networks, one that processes the input sequence in the forward direction and one that processes the input sequence in the backward direction. The outputs of the two LSTM networks are then combined to produce the final output.
+                            </li>
+                            <li>
+                                Bi LSTM have been shown to achieve state-of-the-art results on a wide variety of tasks, including machine translation, speech recognition, and text summarization.
+                            </li>
+                         </ul>
+                         <p>
+                            LSTMs can be stacked to create deep LSTM networks, which can learn even more complex patterns in sequential data. Each LSTM layer captures different levels of abstraction and temporal dependencies in the input data.
+                         </p>
+                    </div>
+
+                    <div class="Architecture" id="section11.1">
+                        <h3>11.1. Architecture of LSTM</h3>
+                        <p>
+                            LSTM architecture has a chain structure that contains four neural networks and different memory blocks called cells.
+                        </p>
+                        <div class="fig3">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/newContent1.png" alt="RCNN">
+                            <div class="caption"><i>Fig 11.1</i></div>
+                        </div>
+                        <p>Information is retained by the cells and the memory manipulations are done by the gates. There are three gates – </p>
+                        <ol type="i">
+                            <li>
+                                <b>Forget Gate</b><br><br>
+                                The information that is no longer useful in the cell state is removed with the forget gate. Two inputs xt (input at the particular time) and ht-1 (previous cell output) are fed to the gate and multiplied with weight matrices followed by the addition of bias. The resultant is passed through an activation function which gives a binary output. If for a particular cell state the output is 0, the piece of information is forgotten and for output 1, the information is retained for future use. The equation for the forget gate is:
+                                <br>
+                                f<sub>t</sub>= (W<sub>f</sub>[h<sub>t-1</sub> , x<sub>t</sub>] + b<sub>f</sub>) <br>
+                                where: <br>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        W_f represents the weight matrix associated with the forget gate.
+                                    </li>
+                                    <li>
+                                        [h_t-1, x_t] denotes the concatenation of the current input and the previous hidden state.
+                                    </li>
+                                    <li>
+                                        b_f is the bias with the forget gate.
+                                    </li>
+                                    <li>
+                                        σ is the sigmoid activation function.
+                                    </li>
+                                </ul>
+
+                                <div class="fig4">
+                                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231123171949/newContent2.jpg" alt="RCNN">
+                                    <div class="caption"><i>Fig 11.2</i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <b>Input gate</b><br><br>
+                                The addition of useful information to the cell state is done by the input gate. First, the information is regulated using the sigmoid function and filter the values to be remembered similar to the forget gate using inputs ht-1 and xt. . Then, a vector is created using tanh function that gives an output from -1 to +1, which contains all the possible values from ht-1 and xt. At last, the values of the vector and the regulated values are multiplied to obtain the useful information.
+                                <div class="fig4">
+                                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/newContent4.png" alt="RCNN">
+                                    <div class="caption"><i>Fig 11.2</i></div>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <b>Output gate</b> <br><br>
+                                The task of extracting useful information from the current cell state to be presented as output is done by the output gate. First, a vector is generated by applying tanh function on the cell. Then, the information is regulated using the sigmoid function and filter by the values to be remembered using inputs ht-1 and xt. At last, the values of the vector and the regulated values are multiplied to be sent as an output and input to the next cell.
+                                <div class="fig4">
+                                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231123172212/newContent3.jpg" alt="RCNN">
+                                    <div class="caption"><i>Fig 11.2</i></div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="working" id="section11.2">
+                        <h3>11.2. Working</h3>
+                        <p>LSTMs use a cell state to store information about past inputs. This cell state is updated at each step of the network, and the network uses it to make predictions about the current input.
+                        <br>
+                        The cell state is updated using a series of gates that control how much information is allowed to flow into and out of the cell.
+                        <br><br>
+                            <iframe width="400" height="315" src="https://www.youtube.com/embed/YCzL96nL7j0?si=gBpD8_qTRcqawwEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </p>
+                    </div>
+
+                </div>
+                
+                <div class="sectiontwelve" id="section12">
+                    <div class="headline">12. Activation Functions <hr size=".1px" color="gray"></div>
+                    <div class="intr0" id="section12.0">
+                        <p>
+                            An Activation Function decides whether a neuron should be activated or not. This means that it will decide whether the neuron’s input to the network is important or not in the process of prediction using simpler mathematical operations. 
+                        </p><br>
+                        <p>
+                            The role of the Activation Function is to derive output from a set of input values fed to a node (or a layer).
+                        </p>
+                    </div>
+
+                    <div class="elts" id="section12.1">
+                        <h3>12.1. Elements in Neural Networks</h3>
+                        <ol type="i">
+                            <li>
+                                <b>Input Layer: </b> This layer accepts input features. It provides information from the outside world to the network, no computation is performed at this layer, nodes here just pass on the information(features) to the hidden layer. 
+                            </li>
+                            <li>
+                                <b>Hidden Layer: </b> Nodes of this layer are not exposed to the outer world, they are part of the abstraction provided by any neural network. The hidden layer performs all sorts of computation on the features entered through the input layer and transfers the result to the output layer. 
+                            </li>
+                            <li>
+                                <b>Output Layer: </b> This layer bring up the information learned by the network to the outer world.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="use" id="section12.2">
+                        <h3>12.2. Use of activation function</h3>
+                        <p>
+                            The activation function decides whether a neuron should be activated or not by calculating the weighted sum and further adding bias to it. The purpose of the activation function is to introduce <b>non-linearity</b> into the output of a neuron.
+                        </p>
+                    </div>
+
+                    <div class="nl" id="section12.3">
+                        <h3>12.3. Non-linear activation function</h3>
+                        <p>
+                            A neural network without an activation function is essentially just a linear regression model. The activation function does the non-linear transformation to the input making it capable to learn and perform more complex tasks. 
+                        </p><br>
+                        
+                    </div>
+
+                    <div class="variants" id="section12.4">
+                        <h3>12.4. Variants of Activation Function </h3>
+                        <ol type="i">
+                            <li>
+                                Linear Function 
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        <b>Equation : </b> Linear function has the equation similar to as of a straight line i.e. y = x
+                                    </li>
+                                    <li>
+                                        No matter how many layers we have, if all are linear in nature, the final activation function of last layer is nothing but just a linear function of the input of first layer.
+                                    </li>
+                                    <li>
+                                        <b>Range : </b>-inf to +inf
+                                    </li>
+                                    <li>
+                                        <b>Uses :</b>Linear activation function is used at just one place i.e. output layer.
+                                    </li>
+                                    <li>
+                                        <b>Issues :</b>If we will differentiate linear function to bring non-linearity, result will no more depend on input “x” and function will become constant, it won’t introduce any ground-breaking behavior to our algorithm.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Sigmoid Function <br>
+                                <div class="fig2">
+                                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221013120722/1.png" alt="activation_functioN">
+                                    <div class="caption"><i>Fig 12.4.1</i>
+                                    </div>
+                                </div>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        It is a function which is plotted as <b>‘S’</b> shaped graph.
+                                    </li>
+                                    <li>
+                                        <b>Equation :</b>A = 1/(1 + e <sup>-x</sup>)
+                                    </li>
+                                    <li>
+                                        <b>Nature :</b>Non-linear. Notice that X values lies between -2 to 2, Y values are very steep. This means, small changes in x would also bring about large changes in the value of Y.
+                                    </li>
+                                    <li>
+                                        <b>Value Range :</b> 0 to 1
+                                    </li>
+                                    <li>
+                                        <b>
+                                            Uses : 
+                                        </b> Usually used in output layer of a binary classification, where result is either 0 or 1, as value for sigmoid function lies between 0 and 1 only so, result can be predicted easily to be 1 if value is greater than 0.5 and 0 otherwise.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Tanh Function <br>
+                                <div class="fig2">
+                                    <img src="https://ambrapaliaidata.blob.core.windows.net/ai-storage/articles/Untitled_design_50.png" alt="activation_functioN">
+                                    <div class="caption"><i>Fig 12.4.2</i>
+                                    </div>
+                                </div>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        The activation that works almost always better than sigmoid function is Tanh function also known as Tangent Hyperbolic function. It’s actually mathematically shifted version of the sigmoid function. Both are similar and can be derived from each other.
+                                    </li>
+                                    <li>
+                                        <b>Equation :-</b>
+                                        <br>
+                                        f(x) = tanh(x) = (2/1+e <sup>-2x</sup>) - 1
+                                    </li>
+                                    <li>
+                                        <b>Value Range :-</b> -1 to +1
+                                    </li>
+                                    <li>
+                                        <b>Nature :-</b> non-linear
+                                    </li>
+                                    <li>
+                                        <b>Uses :- </b> Usually used in hidden layers of a neural network as it’s values lies between -1 to 1 hence the mean for the hidden layer comes out be 0 or very close to it, hence helps in centering the data by bringing mean close to 0. This makes learning for the next layer much easier.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                RELU Function <br>
+                                <div class="fig2">
+                                    <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Screenshot-from-2018-01-04-22-45-49-e1515086199933.png" alt="ANN">
+                                    <div class="caption"><i>Fig 12.4.3</i>
+                                    </div>
+                                </div>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        It Stands for Rectified linear unit. It is the most widely used activation function. Chiefly implemented in hidden layers of Neural network.
+                                    </li>
+                                    <li>
+                                        <b>Equation :- A(x) = max(0,x).</b>It gives an output x if x is positive and 0 otherwise.
+                                    </li>
+                                    <li>
+                                        <b>Value Range :- </b>[0, inf]
+                                    </li>
+                                    <li>
+                                        <b>Nature :- </b> non-linear, which means we can easily backpropagate the errors and have multiple layers of neurons being activated by the ReLU function.
+                                    </li>
+                                    <li>
+                                        <b>Uses :-</b>ReLu is less computationally expensive than tanh and sigmoid because it involves simpler mathematical operations. At a time only a few neurons are activated making the network sparse making it efficient and easy for computation.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <div class="sectionthirteen" id="section13">
+                    <div class="headline">13. Difference between ANN and BNN<hr size=".1px" color="gray"></div>
+                    <p>
+                        <b>Artificial Neural Network (ANN)</b> is a type of neural network that is based on a Feed-Forward strategy. It is called this because they pass information through the nodes continuously till it reaches the output node. This is also known as the simplest type of neural network.
+                    </p>
+                    <br>
+                    <p>
+                        <b>Biological Neural Network (BNN)</b> is a structure that consists of Synapse, dendrites, cell body, and axon. In this neural network, the processing is carried out by neurons. Dendrites receive signals from other neurons, Soma sums all the incoming signals and axon transmits the signals to other cells. 
+                    </p>
+                    
+                    <br><br>
+
+                    <table>
+                        <tr>
+                            <th>Artificial Neural Network (ANN)</th>
+                            <th>Biological Neural Network (BNN)</th>
+                        </tr>
+                        <tr>
+                            <td>i. It is the mathematical model which is mainly inspired by the biological neuron system in the human brain.
+                            </td>
+                            <td>i. It is also composed of several processing pieces known as neurons that are linked together via synapses.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ii. Its processing was sequential and centralized.
+                            </td>
+                            <td>
+                                ii. It processes the information in a parallel and distributive manner.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                iii. It is small in size.
+                            </td>
+                            <td>
+                                iii. 	It is large in size.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                iv. Its control unit keeps track of all computer-related operations.
+                            </td>
+                            <td>
+                                iv. All processing is managed centrally.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                v. It processes the information at a faster speed.
+                            </td>
+                            <td>
+                                v. It processes the information at a slow speed.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                vi. It cannot perform complex pattern recognition.
+                            </td>
+                            <td>
+                                vi. The large quantity and complexity of the connections allow the brain to perform complicated tasks.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                vii. It doesn't provide any feedback.
+                            </td>
+                            <td>
+                                vii. It provides feedback.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                viii. There is no fault tolerance.
+                            </td>
+                            <td>
+                                viii. It has fault tolerance.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ix. Its operating environment is well-defined and well-constrained
+                            </td>
+                            <td>
+                                ix. Its operating environment is poorly defined and unconstrained.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                x. Its memory is separate from a processor, localized, and non-content addressable.
+                            </td>
+                            <td>
+                                x. Its memory is integrated into the processor, distributed, and content-addressable.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                xi. It is very vulnerable.
+                            </td>
+                            <td>
+                                xi. It is robust.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                xii. It has very accurate structures and formatted data. 
+                            </td>
+                            <td>
+                                xii. They are tolerant to ambiguity.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                xiii. Its response time is measured in milliseconds.
+                            </td>
+                            <td>
+                                xiii. Its response time is measured in nanoseconds.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="sectionfourteen" id="section14">
+                    <div class="headline">
+                        14. Optimizers<hr size=".1px" color="gray">
+                    </div>
+                    <div class="intro" id="section14.1">
+                        <h3>14.1. Introduction to Optimizers</h3>
+                        <p>
+                            In deep learning, an optimizer is a crucial element that fine-tunes a neural network’s parameters during training. Its primary role is to minimize the model’s error or loss function, enhancing performance. Various optimization algorithms, known as optimizers, employ distinct strategies to converge towards optimal parameter values for improved predictions efficiently.
+                        </p>
+                        <br>
+                        <p>
+                            Well-known optimizers in deep learning encompass Stochastic Gradient Descent (SGD), Adam, and RMSprop, each equipped with distinct update rules, learning rates, and momentum strategies, all geared towards the overarching goal of discovering and converging upon optimal model parameters, thereby enhancing overall performance.
+                        </p>
+                        <br>
+                        <p>
+                            <b>
+                                Important Deep Learning Terms :
+                            </b><br><br>
+                            Before proceeding, there are a few terms that you should be familiar with.
+                            <br>
+                            <ol type="i">
+                                <li>
+                                    <b>
+                                        Epoch :
+                                    </b> The number of times the algorithm runs on the whole training dataset.
+                                </li>
+                                <li>
+                                    <b>
+                                        Sample :
+                                    </b> A single row of a dataset.
+                                </li>
+                                <li>
+                                    <b>
+                                        Batch :
+                                    </b> It denotes the number of samples to be taken to for updating the model parameters.
+                                </li>
+                                <li>
+                                    <b>
+                                        Learning rate : 
+                                    </b> It is a parameter that provides the model a scale of how much model weights should be updated.
+                                </li>
+                                <li>
+                                    <b>
+                                        Cost Function/Loss Function :
+                                    </b> A cost function is used to calculate the cost, which is the difference between the predicted value and the actual value.
+                                </li>
+                                <li>
+                                    <b>
+                                        Weights/ Bias :
+                                    </b> The learnable parameters in a model that controls the signal between two neurons.
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <div class="types" id="section14.2">
+                        <h3>14.2 Types of Optimizers</h3>
+                        <p>
+                            Many types of optimizers are available for training machine learning models, each with its own strengths and weaknesses. Some optimizers are better suited for certain types of models or data, while others are more general-purpose.
+                        </p>
+                        <ol type="i">
+                            <li>
+                                <b>Gradient Descent</b><br><br>
+                                Gradient descent is a simple optimization algorithm that updates the model's parameters to minimize the loss function. We can write the basic form of the algorithm as follows:
+                                <br><br>
+                                θ = θ − α ⋅ ∇ <sub>θ</sub> L(θ)
+                                <br><br>
+                                where θ is the model parameter, L(θ) is the loss function, and α is the learning rate.
+                            </li>
+                            <li>
+                                <b>
+                                    Stochastic Gradient Descent <br><br>
+                                </b>
+                                Stochastic gradient descent (SGD) is a variant of gradient descent that involves updating the parameters based on a small, randomly-selected subset of the data (i.e., a "mini-batch") rather than the full dataset. We can write the basic form of the algorithm as follows: <br> <br>
+                                θ = θ − α ⋅ ∇<sub>θ</sub> L(θ; x <sup>(i)</sup>; y <sup>(i)</sup>)
+                                <br><br>
+                                where (x <sup>(i)</sup>; y <sup>(i)</sup>) is a mini-batch of data. 
+                            </li>
+                            <li>
+                                <b>Stochastic Gradient Descent with Momentum </b> <br><br>
+                                SGD with momentum is a variant of SGD that adds a "momentum" term to the update rule, which helps the optimizer to continue moving in the same direction even if the local gradient is small. The momentum term is typically set to a value between 0 and 1. We can write the update rule as follows: <br><br>
+                                v = β ⋅ v + (1−β) ⋅ ∇<sub>θ</sub> L(θ ; x<sup>(i)</sup>; y<sup>(i)</sup>)
+                                <br><br>
+                                θ = θ − α⋅v 
+                                <br><br>
+                                where v is the momentum vector and β is the momentum hyperparameter.
+                            </li>
+                            <li>
+                                <b>Mini-Batch Gradient Descent</b> <br><br>
+                                Mini-batch gradient descent is similar to SGD, but instead of using a single sample to compute the gradient, it uses a small, fixed-size "mini-batch" of samples. The update rule is the same as for SGD, except that the gradient is averaged over the mini-batch. This can reduce noise in the updates and improve convergence.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="sectionfifteen" id="section15">
+                    <div class="headline">15. Loss Function<hr size=".1px" color="gray"></div>
+                    <p>
+                        The loss function estimates how well a particular algorithm models the provided data. Loss functions are classified into two classes based on the type of learning task
+                    </p>
+                    <div class="working" id="section15.1">
+                        <p>
+                            Although there are different types of loss functions, fundamentally, they all operate by quantifying the difference between a mode’s predictions and the actual target value in the dataset. The official term for this numerical quantification is the prediction error. The learning algorithm and mechanisms in a machine learning model are optimized to minimize the prediction error, so this means that after a calculation of the value for the loss function, which is determined by the prediction error, the learning algorithm leverages this information to conduct weight and parameter updates which in effect during the next training pass leads to a lower prediction error.
+                        </p>
+                        <br>
+                        <p>
+                            When exploring the topic of loss function, machine learning algorithms, and the learning process within neural networks, the topic of Empirical Risk Minimization(ERM) comes up. ERM is an approach to selecting the optimal parameters of a machine learning algorithm that minimizes the empirical risk. The empirical risk, in this case, is the training dataset.
+                        </p>
+                        <br>
+                        <p>
+                            The risk minimization component of ERM is the process by which the internal learning algorithm minimizes the error of prediction of machine learning algorithm to a known dataset in the outcome that the model has an expected performance and accuracy in a scenario where an unseen dataset or data sample which could have similar statical data distribution as the dataset the model’s has been initially trained on.
+                        </p>
+                    </div>
+
+                    <div class="types" id="section15.2">
+                        <p>
+                            Loss functions in machine learning can be categorized based on the machine learning tasks to which they are applicable. Most loss functions apply to regression and classification machine learning problems. The model is expected to predict continuous output values for regression machine learning tasks. In contrast, the model is expected to provide discrete labels corresponding to a dataset class for classification tasks.
+                        </p>
+                        <br>
+                        <p>
+                            Below are standard loss functions and their classification into machine learning problems they lend themselves well to.
+                        </p>
+                        <br>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                            <th>
+                            <p class="p-margin" dir="ltr">Loss Function</p>
+                            </th>
+                            <th>
+                            <p class="p-margin" dir="ltr">Applicability to Classification</p>
+                            </th>
+                            <th>
+                            <p class="p-margin" dir="ltr">Applicability to Regression</p>
+                            </th>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p class="p-margin" dir="ltr">Mean Square Error (MSE) / L2 Loss</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✖️</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✔️</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p class="p-margin" dir="ltr">Mean Absolute Error (MAE) / L1 Loss</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✖️</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✔️</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p class="p-margin" dir="ltr">Binary Cross-Entropy Loss / Log Loss</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✔️</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✖️</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p class="p-margin" dir="ltr">Categorical Cross-Entropy Loss</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✔️</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✖️</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p class="p-margin" dir="ltr">Hinge Loss</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✔️</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✖️</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p class="p-margin" dir="ltr">Huber Loss / Smooth Mean Absolute Error</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✖️</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✔️</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p class="p-margin" dir="ltr">Log Loss</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✔️</p>
+                            </td>
+                            <td>
+                            <p class="p-margin" dir="ltr">✖️</p>
+                            </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="sectionsixteen" id="section16">
+                    <div class="headline">
+                        16. Autoencoders<hr size=".1px" color="gray">
+                    </div>
+                    <div class="intro" id="section16.1">
+                        <h3>16.1. Introduction to Autoencoder</h3>
+                        <p>
+                            <b>Autoencoders</b> are a specialized class of algorithms that can learn efficient representations of input data with no need for labels. It is a class of artificial neural networks designed for unsupervised learning. Learning to compress and effectively represent input data without specific labels is the essential principle of an automatic decoder. This is accomplished using a two-fold structure that consists of an encoder and a decoder. The encoder transforms the input data into a reduced-dimensional representation, which is often referred to as “latent space” or “encoding”. From that representation, a decoder rebuilds the initial input. For the network to gain meaningful patterns in data, a process of encoding and decoding facilitates the definition of essential features.
+                        </p>
+                    </div>
+
+                    <div class="architecture" id="section16.2">
+                        <h3>16.2. Architecture of Autoencoder </h3>
+                        <p>The general architecture of an autoencoder includes an encoder, decoder, and bottleneck layer.</p>
+                        <br>
+                        <div class="fig2">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231130152144/Autoencoder.png" alt="ANN">
+                            <div class="caption"><i>Fig 16.2</i>
+                            </div>
+                        </div>
+
+                        <ol type="i">
+                            <li>
+                                Encoder : 
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        Input layer take raw input data
+                                    </li>
+                                    <li>
+                                        The hidden layers progressively reduce the dimensionality of the input, capturing important features and patterns. These layer compose the encoder.
+                                    </li>
+                                    <li>
+                                        The bottleneck layer (latent space) is the final hidden layer, where the dimensionality is significantly reduced. This layer represents the compressed encoding of the input data.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Decoder :
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        The bottleneck layer takes the encoded representation and expands it back to the dimensionality of the original input.
+                                    </li>
+                                    <li>
+                                        The hidden layers progressively increase the dimensionality and aim to reconstruct the original input.
+                                    </li>
+                                    <li>
+                                        The output layer produces the reconstructed output, which ideally should be as close as possible to the input data.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                The loss function used during training is typically a reconstruction loss, measuring the difference between the input and the reconstructed output. Common choices include mean squared error (MSE) for continuous data or binary cross-entropy for binary data.
+                            </li>
+                            <li>
+                                During training, the autoencoder learns to minimize the reconstruction loss, forcing the network to capture the most important features of the input data in the bottleneck layer.
+                            </li>
+                        </ol>
+
+                        <p>
+                            After the training process, only the encoder part of the autoencoder is retained to encode a similar type of data used in the training process. The different ways to constrain the network are: –
+                        </p>
+                         
+                        <ul style="list-style-type: disc;">
+                            <li>
+                                <b>Keep small Hidden Layers:</b> If the size of each hidden layer is kept as small as possible, then the network will be forced to pick up only the representative features of the data thus encoding the data.
+                            </li>
+                            <li>
+                                <b>Regularization:</b> In this method, a loss term is added to the cost function which encourages the network to train in ways other than copying the input.
+                            </li>
+                            <li>
+                                <b>Denoising:</b> Another way of constraining the network is to add noise to the input and teach the network how to remove the noise from the data.
+                            </li>
+                            <li>
+                               <b>Tuning the Activation Functions:</b> This method involves changing the activation functions of various nodes so that a majority of the nodes are dormant thus, effectively reducing the size of the hidden layers.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="types" id="section16.3">
+                        <h3>16.3. Types of Autoencoders</h3>
+                        <p>
+                            There are diverse types of autoencoders and analyze the advantages and disadvantages associated with different variation:
+                        </p>
+                        <ol type="i">
+                            <li>
+                                <b>Denoising autoencoder </b>works on a partially corrupted input and trains to recover the original undistorted image. As mentioned above, this method is an effective way to constrain the network from simply copying the input and thus learn the underlying structure and important features of the data.
+                            </li>
+                            <li>
+                                <b>Sparse autoencoder </b>typically contains more hidden units than the input but only a few are allowed to be active at once. This property is called the sparsity of the network. The sparsity of the network can be controlled by either manually zeroing the required hidden units, tuning the activation functions or by adding a loss term to the cost function.
+                            </li>
+                            <li>
+                                <b>Variational autoencoder</b> makes strong assumptions about the distribution of latent variables and uses the Stochastic Gradient Variational Bayes estimator in the training process. It assumes that the data is generated by a Directed Graphical Model and tries to learn an approximation to q<sub>φ</sub> (z|x) to the conditional property q<sub>θ</sub>(z|x)      where φ and θ are the parameters of the encoder and the decoder respectively.
+                            </li>
+                            <li>
+                                <b>Convolutional autoencoders</b> are a type of autoencoder that use convolutional neural networks (CNNs) as their building blocks. The encoder consists of multiple layers that take a image or a grid as input and pass it through different convolution layers thus forming a compressed representation of the input. The decoder is the mirror image of the encoder it deconvolves the compressed representation and tries to reconstruct the original image.
+                            </li>
+                        </ol>
+                    </div>
+
+
+                </div> 
+
+                <!-- <div class="section five" id="section5">
+                    <div class="headline">Autoencoders<hr size=".1px" color="gray"></div>
+                    </div> 
+        
+                    <div class="fig2">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231130152144/Autoencoder.png" alt="ANN">
+                        <div class="caption"><i>Fig 9.1</i>
+                        </div>
+                    </div>
+    
+                    <div class="fig1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/newContent1.png" alt="RCNN">
+                        <div class="caption"><i>Fig 6.1</i></div>
+                    </div>
+        
+                    -->
+    
+    
+            </div>
+
+            
+
+        <div class="next back">
+            <a href="deepLearn.html">
+              << previous<<
+            </a>
+        </div>
+     
+    <footer>
+        This is footer
+    </footer>
+
+</body>
+</html>
