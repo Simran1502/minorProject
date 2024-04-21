@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Operating System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="navigation">
+                <div class="logo">
+                  <img src="https://img.freepik.com/free-vector/teamwork-concept-with-people-desk_23-2147771571.jpg?t=st=1713430833~exp=1713434433~hmac=953a14ea602a2727c6cbf2ac76332f6b9eb33d6bc1fef013aa1403705363189f&w=740">
+                  <h1>VSS</h1>
+                </div>
+                <ul>
+                    <li class="list active">
+                        <a href="index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                     </li>
+                     <li class="list active">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                            </span>
+                            <span class="text">Chat</span>
+                        </a>
+                     </li>
+                     <li class="list active">
+                        <a href="index.html#" onclick="scrollToMeetContainer()">
+                            <span class="icon"><ion-icon name="camera-reverse-outline"></ion-icon>
+                            </span>
+                            <span class="text">Meet</span>
+                        </a>
+                     </li>
+                     <li class="list active">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                            <span class="text">Search</span>
+                        </a>
+                     </li>
+                     <li class="list active">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="text">Setting</span>
+                        </a>
+                     </li>
+                </ul>
+                <button>login</button>
+        </div>
+    </nav>
+
+
+    <div class="start">
+            
+        <div class="sidenav">
+            <h3>Menu</h3>
+            <ul>
+                <li>
+                    <a href="linuxOs.html#section0">Overview</a>
+                </li>
+                <li>
+                    <a href="linuxOs.html#section1">Features of Linux Operating System</a>
+                </li>
+                <li>
+                    <details id="linuxOs.html#section2">
+                        <summary>The Kernel</summary>
+                        <li>
+                            <a href="linuxOs.html#section2.1">Types</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <details id="linuxOs.html#section3">
+                        <summary>The Shell</summary>
+                        <li>
+                            <a href="#section3.1">
+                                Basic shell Commands in Linux
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section3.2">
+                                Shell Variables
+                            </a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <details id="#section4">
+                        <summary>Use of Linux as various servers</summary>
+                        <li>
+                            <a href="#section4.1">Use of Linux as Webserver</a>
+                        </li>
+                        <li>
+                            <a href="#section4.2">Use of linux as File Server</a>
+                        </li>
+                        <li>
+                            <a href="#section4.3">
+                                Use of linux as DNS server
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section4.4">Use of linux as Mail Server</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <details id="#section5">
+                        <summary>File System</summary>
+                        <li>
+                            <a href="#section5.1">Linux File System Structure</a>
+                        </li>
+                        <li>
+                            <a href="#section5.2">Working of file system</a>
+                        </li>
+                        <li>
+                            <a href="#section5.3">Geometry and Disk Controller</a>
+                        </li>
+                        <li>
+                            <a href="#section5.4">Types of linux File System</a>
+                        </li>
+                        <li>
+                            <a href="#section5.5">
+                                Important Data Structures
+                            </a>
+                        </li>
+                    </details>
+                </li>    
+                <li>
+                    <details id="#section6">
+                        <summary>Process Control</summary>
+                        <li>
+                            <a href="#section6.1">Command to display Process</a>
+                        </li>
+                        <li>
+                            <a href="#section6.2">Process Attributes</a>
+                        </li>
+                        <li>
+                            <a href="#section6.3">Process State</a>
+                        </li>
+                        <li>
+                            <a href="#section6.4">Scheduling Process</a>
+                        </li>
+                    </details>
+                </li>
+                <li>
+                    <a href="#section7">System Security
+                    </a>
+                </li>
+                <li>
+                    <details id="#section8">
+                        <summary>Dynamic Host Configuration Protocol</summary>
+                        <li>
+                            <a href="#section8.1">DHCP Leased Time</a>
+                        </li>
+                        <li>
+                            <a href="#section8.2">DHCP Scopes</a>
+                        </li>
+                        <li>
+                            <a href="#section8.3">
+                                DHCP IP Address Allocation Types
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section8.4"> Planning DHCP Deployment:</a>
+                        </li>
+                        <li>
+                            <a href="#section8.5">DHCP Configuration Files</a>
+                        </li>
+                        <li>
+                            <a href="#section8.6">Configuration of DHCP Clients</a>
+                        </li>
+                        <li>
+                            <a href="#section8.7">
+                                Manually Configuring DHCP in Linux
+                            </a>
+                        </li>
+                    </details>
+                </li>                       
+            </ul>
+        </div>
+
+        <div class="main">
+
+        <div class="intro" id="section0">
+        <h1>Introduction to Linux Operating System<hr size=".1px" color="gray"></h1>
+            <p>
+                Linux is a widely used open-source operating system kernel first developed by Linus Torvalds in 1991. It's the foundation of many popular operating systems known as Linux distributions (distros), such as Ubuntu, Fedora, Debian, and CentOS, each with its own package management system, software repositories, and user interface.
+            </p>
+            <br>
+            <p>
+                Overall, Linux is a powerful and versatile operating system that offers a free and open alternative to proprietary systems. Its flexibility, security, and performance make it a popular choice for a wide range of computing tasks.
+            </p>
+            <br><br>
+            <h3> &nbsp;&nbsp;&nbsp; Architecture of Linux</h3>
+            <p>
+                Linux architecture has the following components: 
+                <ol type="i">
+                <li>
+                    <b>Kernel :</b> Kernel is the core of the Linux based operating system. It virtualizes the common hardware resources of the computer to provide each process with its virtual resources. This makes the process seem as if it is the sole process running on the machine. The kernel is also responsible for preventing and mitigating conflicts between different processes.<br><br> Different types of the kernel are: 
+                    <ul style="list-style-type: decimal;">
+                        <li>Monolithic Kernel</li>
+                        <li>Hybrid kernels</li>
+                        <li>Exo kernels</li>
+                        <li>Micro kernels</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>System Library :</b> Linux uses system libraries, also known as shared libraries, to implement various functionalities of the operating system. These libraries contain pre-written code that applications can use to perform specific tasks. By using these libraries, developers can save time and effort, as they don’t need to write the same code repeatedly. System libraries act as an interface between applications and the kernel, providing a standardized and efficient way for applications to interact with the underlying system.
+                </li>
+                <li>
+                    <b>Shell :</b> The shell is the user interface of the Linux Operating System. It allows users to interact with the system by entering commands, which the shell interprets and executes. The shell serves as a bridge between the user and the kernel, forwarding the user’s requests to the kernel for processing. It provides a convenient way for users to perform various tasks, such as running programs, managing files, and configuring the system.
+                </li>
+                <li>
+                    <b>Hardware Layer :</b> The hardware layer encompasses all the physical components of the computer, such as RAM (Random Access Memory), HDD (Hard Disk Drive), CPU (Central Processing Unit), and input/output devices. This layer is responsible for interacting with the Linux Operating System and providing the necessary resources for the system and applications to function properly. The Linux kernel and system libraries enable communication and control over these hardware components, ensuring that they work harmoniously together.
+                </li>
+                <li>
+                    <b>System Utility :</b> System utilities are essential tools and programs provided by the Linux Operating System to manage and configure various aspects of the system. These utilities perform tasks such as installing software, configuring network settings, monitoring system performance, managing users and permissions, and much more. System utilities simplify system administration tasks, making it easier for users to maintain their Linux systems efficiently.
+                </li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="headline">
+        Table of Content<hr size=".1px" color="gray">
+        </div>
+
+        <div class="index glass" id="index">
+        <ul>
+            <li>
+                <a href="#section1">Features of Linux Operating System</a>
+            </li>
+            <li>
+                <a href="#section2">The Kernel</a>
+            </li>
+            <li>
+                <a href="#section3">The Shell</a>
+            </li>
+            <li>
+                <a href="#section4">Use of Linux as various servers</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#section5">File System</a>
+            </li> 
+            <li>
+                <a href="#section6">Process Control</a>
+            </li>
+            <li>
+                <a href="#section7">System Security</a>
+            </li>
+            <li>
+                <a href="#section8">Dynamic Host Configuration Protocol</a>
+            </li>
+        </ul>
+        <br>
+
+        </div>
+
+        <div class="containr">
+
+            <div class="section one" id="section1">
+            <div class="headline">
+                1. Features of Linux Operating System<hr size=".1px" color="gray">
+            </div>
+            <p>
+                Features of Linux:
+                <br><br>
+                <ol type="i">
+                    <li>
+                        <b>Kernel :</b> At its core, Linux is a kernel, which is the central component of the operating system responsible for managing hardware resources and providing essential services for all other parts of the system.
+                    </li>
+                    <li>
+                        <b>Open Source :</b> One of the defining features of Linux is its open-source nature. This means that its source code is freely available for anyone to study, modify, and distribute. This has led to a vibrant community of developers contributing to its development and improvement. 
+                    </li>
+                    <li>
+                        <b>Distributions (Distros) :</b> Linux is not typically used in its pure kernel form; instead, it's packaged with additional software and utilities to create complete operating systems known as distributions or distros. Each distro may have its own package management system, default software selection, and configuration tools.
+                    </li>
+                    <li>
+                        <b>Package Management :</b> Most Linux distributions use package management systems to install, update, and remove software packages. Common package management tools include APT (used by Debian and Ubuntu), YUM/DNF (used by Fedora and CentOS), and Pacman (used by Arch Linux).
+                    </li>
+                    <li>
+                        <b>User Interfaces :</b> Linux offers a variety of user interfaces, including command-line interfaces (CLI) and graphical user interfaces (GUI). The most popular GUI environments include GNOME, KDE Plasma, Xfce, and LXQt. Additionally, there are many lightweight window managers for users seeking minimal resource usage.
+                    </li>
+                    <li>
+                        <b>Security :</b> Linux is known for its robust security features. These include file permissions, which restrict access to files and directories, and user privilege separation, which limits the damage that can be caused by malicious software. Linux also supports various security-enhancing features such as SELinux (Security-Enhanced Linux) and AppArmor.
+                    </li>
+                    <li>
+                        <b>Flexibility and Customization :</b> Linux offers a high degree of flexibility and customization. Users can tailor their systems to meet specific needs by choosing from a vast array of software packages and configuring various system settings.
+                    </li>
+                    <li>
+                        <b>Stability and Performance :</b> Linux is renowned for its stability and performance, particularly in server environments. Its architecture and design principles prioritize efficiency and reliability, making it a popular choice for servers and embedded systems.
+                    </li>
+                    <li>
+                        <b>Wide Range of Applications :</b> Linux is used in a wide range of applications, from desktop computers and servers to smartphones, IoT devices, and supercomputers. Its versatility and scalability make it suitable for use in diverse environments.
+                    </li>
+                    <li>
+                        <b>Community and Support :</b> Linux has a large and active community of users and developers who provide support, contribute to development, and create documentation and tutorials. Online forums, mailing lists, and IRC channels are common places to seek help and share knowledge.
+                    </li>
+                </ol>
+            </p>  
+
+            </div>
+    
+            <div class="indx" id="scrollToTop">
+            <a href="#index"><i class="fas fa-arrow-circle-up"></i></a>
+            </div>
+
+            <div class="section two" id="section2">
+                <div class="headline">
+                    2. The Kernel<hr size=".1px" color="gray">
+                </div>
+                <p>
+                    The kernel is the core component of the operating system. It acts as an intermediary between the hardware and the software layers, managing system resources, providing essential services, and facilitating communication between different parts of the system.
+                    <br><br>
+                    Here are some key functions of the Linux kernel:
+                </p>
+                <ol type="i">
+                    <li>
+                        <b>Process Management :</b> The kernel manages processes, which are running instances of programs. It schedules processes for execution, allocates CPU time to them, and handles process creation, termination, and synchronization.
+                    </li>
+                    <li>
+                        <b>Memory Management :</b> The kernel manages system memory, including allocation and deallocation of memory for processes, virtual memory management (which includes paging and swapping), and memory protection to prevent unauthorized access.
+                    </li>
+                    <li>
+                        <b>Device Management :</b> The kernel provides a unified interface for interacting with hardware devices, such as disk drives, network interfaces, and input/output devices. It manages device drivers, which are software components that allow the kernel to communicate with specific hardware devices.
+                    </li>
+                    <li>
+                        <b>File System Management :</b> The kernel provides file system support, including managing file access permissions, file creation, deletion, and manipulation, and maintaining file system integrity.
+                    </li>
+                    <li>
+                        <b>Networking :</b> The kernel implements networking protocols and provides support for network communication, including TCP/IP stack, device drivers for network interfaces, and network socket interface for user-level networking applications.
+                    </li>
+                    <li>
+                        <b>Security :</b> The kernel enforces security policies, such as access control mechanisms (e.g., file permissions), process isolation, and authentication.
+                    </li>
+                    <li>
+                        <b>Interprocess Communication (IPC) :</b> The kernel provides mechanisms for processes to communicate with each other, such as shared memory, pipes, sockets, and message queues.
+                    </li>
+                    <li>
+                        <b>System Calls :</b> System calls are the interface between user-space applications and the kernel. They allow user programs to request services from the kernel, such as file operations, process management, and network communication.
+                    </li>
+                    <li>
+                        <b>Interrupt Handling :</b> The kernel handles hardware interrupts generated by devices to signal events that require immediate attention, such as data arrival on a network interface or completion of disk I/O operations.
+                    </li>
+                    <li>
+                        <b>Power Management :</b> The kernel manages power-related functions, such as putting the system into sleep or hibernate modes, managing CPU frequency scaling, and handling power events.
+                    </li>
+                </ol>
+
+                <div class="sectiontwoone" id="section2.1">
+                    <h3>2.1. Types of Kernel :</h3>
+                    <ol type="i">
+                        <li>
+                            <b>Monolithic Kernel :</b> It is one of types of kernel where all operating system services operate in kernel space. It has dependencies between systems components. It has huge lines of code which is complex. <br><br>
+                            Example:  <br>
+                            Unix, Linux, Open VMS, XTS-400 etc. <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Advantages :</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    <b>Efficiency :</b> Monolithic kernels are generally faster than other types of kernels because they don’t have to switch between user and kernel modes for every system call, which can cause overhead.
+                                </li>
+                                <li>
+                                    <b>Tight integration :</b> Since all the operating system services are running in kernel space, they can communicate more efficiently with each other, making it easier to implement complex functionalities and optimizations.
+                                </li>
+                                <li>
+                                    <b>Simplicity :</b>  Monolithic kernels are simpler to design, implement, and debug than other types of kernels because they have a unified structure that makes it easier to manage the code.
+                                </li>
+                                <li>
+                                    <b>Lower latency :</b> Monolithic kernels have lower latency than other types of kernels because system calls and interrupts can be handled directly by the kernel.
+                                </li>
+                            </ul>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Disadvantages :</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    <b>Stability issues :</b> Monolithic kernels can be less stable than other types of kernels because any bug or security vulnerability in a kernel service can affect the entire system.
+                                </li>
+                                <li>
+                                    <b>Security vulnerabilities :</b> Since all the operating system services are running in kernel space, any security vulnerability in one of the services can compromise the entire system.
+                                </li>
+                                <li>
+                                    <b>Maintenance difficulties :</b> Monolithic kernels can be more difficult to maintain than other types of kernels because any change in one of the services can affect the entire system.
+                                </li>
+                                <li>
+                                    <b>Limited modularity :</b> Monolithic kernels are less modular than other types of kernels because all the operating system services are tightly integrated into the kernel space. This makes it harder to add or remove functionality without affecting the entire system.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Micro Kernel :</b> It is kernel types which has minimalist approach. It has virtual memory and thread scheduling. It is more stable with less services in kernel space. It puts rest in user space. <br><br>
+                            It is used in small os. <br><br>
+                            Example: <br>
+                            Mach, L4, AmigaOS, Minix, K42 etc.
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Advantages :</b>
+                            <ul style="list-style-type:disc">
+                                <li>
+                                    <b>Reliability :</b> Microkernel architecture is designed to be more reliable than monolithic kernels. Since most of the operating system services run outside the kernel space, any bug or security vulnerability in a service won’t affect the entire system.
+                                </li>
+                                <li>
+                                    <b>Flexibility :</b> Microkernel architecture is more flexible than monolithic kernels because it allows different operating system services to be added or removed without affecting the entire system.
+                                </li>
+                                <li>
+                                    <b>Modularity :</b> Microkernel architecture is more modular than monolithic kernels because each operating system service runs independently of the others. This makes it easier to maintain and debug the system.
+                                </li>
+                                <li>
+                                    <b>Portability :</b> Microkernel architecture is more portable than monolithic kernels because most of the operating system services run outside the kernel space. This makes it easier to port the operating system to different hardware architectures.
+                                </li>
+                            </ul>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Disadvantages :</b>
+                            <ul style="list-style-type:disc">
+                                <li>
+                                    <b>Performance :</b> Microkernel architecture can be slower than monolithic kernels because it requires more context switches between user space and kernel space. 
+                                </li>
+                                <li>
+                                    <b>Complexity :</b> Microkernel architecture can be more complex than monolithic kernels because it requires more communication and synchronization mechanisms between the different operating system services.
+                                </li>
+                                <li>
+                                    <b>Development difficulty :</b> Developing operating systems based on microkernel architecture can be more difficult than developing monolithic kernels because it requires more attention to detail in designing the communication and synchronization mechanisms between the different services.
+                                </li>
+                                <li>
+                                    <b>Higher resource usage :</b> Microkernel architecture can use more system resources, such as memory and CPU, than monolithic kernels because it requires more communication and synchronization mechanisms between the different operating system services.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Hybrid Kernel :</b> It is the combination of both monolithic kernel and microkernel. It has speed and design of monolithic kernel and modularity and stability of microkernel. <br><br>
+                            Example : <br>
+                            Windows NT, Netware, BeOS etc.
+
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Advantages :</b>
+                            <ul style="list-style-type:disc">
+                                <li>
+                                    <b>Performance :</b>  Hybrid kernels can offer better performance than microkernels because they reduce the number of context switches required between user space and kernel space.
+                                </li>
+                                <li>
+                                    <b>Reliability :</b> Hybrid kernels can offer better reliability than monolithic kernels because they isolate drivers and other kernel components in separate protection domains.
+                                </li>
+                                <li>
+                                    <b>Flexibility :</b> Hybrid kernels can offer better flexibility than monolithic kernels because they allow different operating system services to be added or removed without affecting the entire system.
+                                </li>
+                                <li>
+                                    <b>Compatibility :</b> Hybrid kernels can be more compatible than microkernels because they can support a wider range of device drivers.
+                                </li>
+                            </ul>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Disadvantages :</b>
+                            <ul style="list-style-type:disc">
+                                <li>
+                                    <b>Complexity :</b> Hybrid kernels can be more complex than monolithic kernels because they include both monolithic and microkernel components, which can make the design and implementation more difficult.
+                                </li>
+                                <li>
+                                    <b>Security :</b> Hybrid kernels can be less secure than microkernels because they have a larger attack surface due to the inclusion of monolithic components.
+                                </li>
+                                <li>
+                                    <b>Maintenance :</b> Hybrid kernels can be more difficult to maintain than microkernels because they have a more complex design and implementation.
+                                </li>
+                                <li>
+                                    <b>Resource usage :</b> Hybrid kernels can use more system resources than microkernels because they include both monolithic and microkernel components.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Exo Kernel :</b> It is the type of kernel which follows end-to-end principle. It has fewest hardware abstractions as possible. It allocates physical resources to applications.  <br><br>
+                            Example :  <br>
+                            Nemesis, ExOS etc.
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Advantages :</b>
+                            <ul style="list-style-type:disc">
+                                <li>
+                                    <b>Flexibility :</b> Exokernels offer the highest level of flexibility, allowing developers to customize and optimize the operating system for their specific application needs.
+                                </li>
+                                <li>
+                                    <b>Performance :</b> Exokernels are designed to provide better performance than traditional kernels because they eliminate unnecessary abstractions and allow applications to directly access hardware resources.
+                                </li>
+                                <li>
+                                    <b>Security :</b> Exokernels provide better security than traditional kernels because they allow for fine-grained control over the allocation of system resources, such as memory and CPU time.
+                                </li>
+                            </ul>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b>Disadvantages :</b>
+                            <ul style="list-style-type:disc">
+                                <li>
+                                    <b>Complexity :</b> Exokernels can be more complex to develop than traditional kernels because they require greater attention to detail and careful consideration of system resource allocation.
+                                </li>
+                                <li>
+                                    <b>Development Difficulty :</b>
+                                    Developing applications for exokernels can be more difficult than for traditional kernels because applications must be written to directly access hardware resources.
+                                </li>
+                                <li>
+                                    <b>Debugging Difficulty :</b> Debugging applications and operating system services on exokernels can be more difficult than on traditional kernels because of the direct access to hardware resources.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section three" id="section3">
+                <div class="headline">3. The Shell<hr size=".1px" color="gray"></div>
+                <p>
+                    The shell is the Linux command line interpreter. It provides an interface between the user and the kernel and executes programs called commands. For example, if a user enters ls then the shell executes the ls command. The shell can also execute other programs such as applications, scripts, and user programs (e.g., written in c or the shell programming language).
+                    <br><br>
+                    Linux has often been criticized for being very terse (it’s rumored that its designers were bad typists). Many commands have short, cryptic names - vowels are a rarity:
+                    <br>
+                    awk, cat, cp, cd, chmod, grep, find, ls, mv, ps, rm                
+                </p>
+
+                <br>
+                <div class="threeone" id="section3.1">
+                    <h3>
+                        3.1. Basic shell Commands in Linux
+                    </h3>
+                    <p>
+                        Basic shell commands in Linux are fundamental instructions used within the command line interface (CLI) to perform various tasks and operations on a Linux-based operating system. These commands allow users to interact with the system, manage files and directories, manipulate data, perform administrative tasks, and execute programs or scripts.
+                        <br><br>
+                        <b>Some of the essential Basic Shell Commands in Linux include :</b>
+                        <br>
+                        <ul style="list-style-type: disc;">
+                            <li>
+                                <b>cd (Change Directory) :</b> Allows navigation between directories. For instance, cd moves into a specific directory, while cd .. moves up one level in the directory structure.
+                                <br><br>
+                                Example - 
+                                To change to a specific directory :<br>  cd /path/to/directory
+                                <br><br>
+                                To move up one directory level : 
+                                cd ..
+                            </li>
+                            <li>
+                                <b>ls (List) :</b> Lists the contents of a directory. ls -l provides a detailed list with permissions, ownership, size, and modification date.
+                                <br><br>
+                                Example - 
+                                To list files and directories in the current directory: <br>
+                                ls
+                            </li>
+                            <li>
+                                <b>mkdir (Make Directory) :</b> Creates a new directory. For example, mkdir creates a directory with the specified name.
+                                <br><br>
+                                Example - 
+                                To create a new directory: <br>
+                                mkdir new_directory
+                            </li>
+                            <li>
+                                <b>du :</b> allows users to analyze and report on disk usage within directories and files.
+                                <br><br>
+                                Example -
+                                du [options] [directory/file]
+                            </li>
+                            <li>
+                                <b>pwd (print working directory) :</b> Show the present working directory.
+                                <br><br>
+                                Example -
+                                pwd [OPTIONS]
+                            </li>
+                            <li>
+                                <b>cp (Copy) :</b> Copies files or directories from one location to another. Syntax: cp .
+                                <br><br>
+                                Example - cp source_file destination
+                            </li>
+                            <li>
+                                <b>chown :</b> Used to change the owner of the file.
+                                <br><br>
+                                Example -
+                                chown [options] new_owner[:new_group] file(s)
+                            </li>
+                            <li>
+                                <b>chgrp :</b> Used to change the group owner of the file.
+                                <br><br>
+                                Example -
+                                chgrp [OPTION]… GROUP FILE… <br>
+                                chgrp [OPTION]… -reference=RFILE FILE…
+                            </li>
+                            <li>
+                                <b>chmod :</b> Used to modify the access/permission of a user.
+                                <br><br>
+                                Example -
+                                chmod [options] [mode] [File_name] 
+                            </li>
+                            <li>
+                                <b>rm (Remove) :</b> Deletes files or directories. Use rm to remove a file and rm -r for recursive deletion of directories.
+                            </li>
+                            <li>
+                                <b>cat (Concatenate) :</b> Displays the contents of a file in the terminal. cat shows the entire content of the specified file.
+                            </li>
+                            <li>
+                                <b>grep (Global Regular Expression Print) :</b> Searches for specific text patterns within files. For example, grep "search_term" looks for occurrences of "search_term" in the specified file.
+                            </li>
+                            <li>
+                                <b>man (Manual) :</b> Displays the manual page for a specific command. man provides detailed information and documentation about the command.
+                            </li>
+                        </ul>
+                    </p>
+
+                </div>
+                
+                <div class="threetwo" id="section3.2">
+                    <h3>3.2. Shell Variables</h3>
+                    <p>
+                        A shell variable is a character string in a shell that stores some value. It could be an integer, filename, string, or some shell command itself. Basically, it is a pointer to the actual data stored in memory. We have a few rules that have to be followed while writing variables in the script. Overall knowing the shell variable scripting leads us to write strong and good shell scripts.
+                        <br><br>
+
+                        <b><i>3.2.1. Rules for variable definition</i></b>
+                        <br><br>
+                        <p>
+                            A variable name could contain any alphabet (a-z, A-Z), any digits (0-9), and an underscore ( _ ). However, a variable name must start with an alphabet or underscore. It can never start with a number. Following are some examples of valid and invalid variable names:
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    <b>Valid Variable Names :</b><br>
+                                    <div class="block">
+                                        ABC <br>
+                                        _AV_3 <br>
+                                        AV232 <br>
+                                    </div>
+                                </li>
+                                <li>
+                                    <b>Invalid variable names :</b> <br>
+                                    <div class="block">
+                                        2_AN <br>
+                                        $ABC <br>
+                                        !ABD <br>
+                                        &QAID <br>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <b>Note :</b> It must be noted that no other special character except underscore can be used in a variable name because all other special characters have special meanings in Shell Scripting.
+                        </p>
+                        <br>
+
+                        <p>
+                            <br><b><i>3.2.2. Defining Variables</i></b> <br><br>
+                        
+                            <i>Syntax</i> :  variable_name = < variable data>
+                            <br>Example : num="1", name="Devil" <br> <br>
+                            These kinds of variables are scalar variables as they could hold one value at a time. 
+
+                            <ol type="i">
+                                <li>
+                                    <b> Accessing variable :</b> Variable data could be accessed by appending the variable name with ‘$’ as follows: <br>
+                                    <div class="block">
+                                        #!/bin/bash <br><br>
+                                        VAR_1="Devil" <br>
+                                        VAR_2="OWL" <br><br>
+                                        echo "$VAR_1$VAR_2"
+                                    </div>
+                                    <b>Output :</b>
+                                    <div class="block">
+                                        DevilOWL
+                                    </div>
+                                </li>
+                                <li>
+                                    <b>Unsetting Variables :</b> The unset command directs a shell to delete a variable and its stored data from list of variables. It can be used as follows:
+                                    <div class="block">
+                                        #!/bin/bash
+                                        <br><br>
+                                        var1="Devil" <br>
+                                        var2=23 <br>
+                                        echo $var1 $var2
+                                        <br><br>
+                                        unset var1
+                                        <br><br>
+                                        echo $var1 $var2 
+                                    </div>
+                                    <b>Output :</b>
+                                    <div class="block">
+                                        DEVIL 23 <br>
+                                        23
+                                    </div>
+                                </li>
+                                <li>
+                                    <b>Read only Variables :</b> These variables are read only i.e., their values could not be modified later in the script. Following is an example:
+                                    <div class="block">
+                                        #!/bin/bash <br>
+                                        var1="Devil" <br>
+                                        var2=23 <br>
+                                        readonly var1 <br>
+                                        echo $var1 $var2 <br>
+                                        var1=23 <br>
+                                        echo $var1 $var2 
+                                    </div>
+                                    <b>Output :</b>
+                                    <div class="block">
+                                        Devil 23 <br>
+                                        ./bash1: line 8: var1: readonly variable <br>
+                                        Devil 23
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <ul>
+                                Now let us see all the above codes in action together. Following is a shell script that includes all the shell variables discussed above.
+                                <li>
+                                        <div class="block">
+                                            #!/bin/bash <br>
+                                            #variable definitions <br>
+                                            Var_name="Devil" <br>
+                                            Var_age=23 <br><br>
+                                            
+                                            # accessing the declared variables using $ <br>
+                                            echo "Name is $Var_name, and age is $Var_age." <br><br>
+                                            
+                                            # read-only variables <br>
+                                            var_blood_group="O-" <br>
+                                            readonly var_blood_group <br>
+                                            echo "Blood group is $var_blood_group and read only." <br>
+                                            echo "Error for read only variables, if trying to \ <br>
+                                            modify them." <br>
+                                            echo <br>
+                                            var_blood_group="B+" <br>
+                                            echo <br><br>
+        
+                                            # unsetting variables <br>
+                                            unset Var_age <br>
+                                            echo "After unsetting var_age..." <br>
+                                            echo <br>
+                                            echo "Name is $Var_name, blood group is $var_blood_group\and age is $Var_age..."
+                                        </div>
+                                </li>
+                                <b>Output :</b>
+                                <div class="fig0">
+                                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220913183733/Picture2.png" alt="var">
+                                </div>
+                            </ul>
+                        
+                        </p>
+                        
+                        <p>
+                            <br><b><i>3.2.3. Variable Types</i></b>
+                            <ol type="i">
+                                <li>
+                                    <b>Local Variable :</b> Variables which are specific to the current instance of shell. They are basically used within the shell, but not available for the program or other shells that are started from within the current shell. 
+                                </li>
+                                <li>
+                                    <b>Environment Variable :</b> These variables are commonly used to configure the behavior script and programs that are run by shell. Environment variables are only created once, after which they can be used by any user.
+                                </li>
+                                <li>
+                                    <b>Shell Variables :</b> Variables that are set by shell itself and help shell to work with functions correctly. It contains both, which means it has both, some variables are Environment variable, and some are Local Variables.
+                                </li>
+                            </ol>
+                        </p>
+                        
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="section four" id="section4">
+                <div class="headline">
+                    4. Use of Linux as various servers<hr size=".1px" color="gray">
+                </div>
+                <p>
+                    Before we dive into Linux server details, we will first explain what we mean by a Linux server and show how a Linux server differs from a Linux desktop. <br><br>
+                    Both Linux desktops and Linux servers use the same Linux kernel,
+                    run the same shells, and even have the ability to run the same  programs. The difference comes in which programs they primarily run and how those programs run on the system. <br><br>
+                    Linux desktops primarily focus on personal programs that you run from a graphical desktop interface, such as when you browse the Internet or edit a document. The graphical desktop provides an easy interface for users to interact with the operating system and all files and programs. You start programs by selecting them from a menu system or clicking a desktop icon. In the desktop world, everything is interactive.
+                    <br> <br>
+                    Linux servers primarily operate without any human interaction.There’s no one sitting at a desktop launching applications (and in fact, many servers don’t even have a dedicated monitor and keyboard). The server runs programs that provide shared resources (called services) to multiple users (clients), normally in a network environment. Many services run all the time, even when no clients are actively using them.
+                    <br> <br>
+                    Linux is widely used as a server operating system due to its stability, security, flexibility, and cost-effectiveness. There are some basic internet services that Linux servers are known
+                    to do well and that have become standards across the Internet.
+                </p>
+
+                <br>
+
+                <div class="fourone" id="section4.1">
+                    <h3>4.1. Use of Linux as Webserver</h3>
+                    <p>
+                        Using Linux as a web server is a common practice due to its stability, security, and flexibility. Here's a breakdown of why Linux is often preferred and how it's used as a web server:
+                        <ol type="i">
+                            <li>
+                                <b>Stability :</b> Linux distributions are known for their stability. They can run for long periods without needing a reboot, which is crucial for a server environment where uptime is essential.
+                            </li>
+                            <li>
+                                <b>Security :</b> Linux offers robust security features, such as permissions management, built-in firewalls, and regular security updates. Its open-source nature allows for quick identification and patching of vulnerabilities by the community.
+                            </li>
+                            <li>
+                                <b>Cost-effectiveness :</b> Linux distributions are typically free to use and distribute, making them an economical choice for web hosting providers and businesses.
+                            </li>
+                            <li>
+                                <b>Customizability :</b> Linux provides users with extensive customization options, allowing them to tailor the server environment to their specific needs. This flexibility is particularly valuable for web hosting, where different applications and services may require specific configurations.
+                            </li>
+                            <li>
+                                <b>Performance :</b> Linux is optimized for performance, making it well-suited for serving web content efficiently. Its lightweight nature ensures minimal resource overhead, allowing servers to handle high traffic loads effectively.
+                            </li>
+                            <li>
+                                <b>Support for Web Technologies :</b> Linux distributions come with a wide range of tools and software packages commonly used in web development and hosting, including Apache, Nginx, MySQL, PHP (LAMP stack), Python, and more. These components enable developers to deploy and manage various types of web applications with ease.
+                            </li>
+                            <li>
+                                <b>Containerization and Virtualization :</b> Linux-based technologies like Docker and Kubernetes have become increasingly popular for deploying and managing web applications. These technologies provide efficient containerization and orchestration capabilities, allowing for scalable and resilient web hosting environments.
+                            </li>
+                        </ol>
+                        <p>
+                            By far the most popular use of Linux servers on the Internet is as a web server. Linux-based web servers host the majority of websites,including many of the most popular websites.
+                            <br>
+                            As is true for many Linux applications, there are multiple programs that you can use to build a Linux web server. These are the most popular ones you’ll run into and should know about.
+                        </p>
+                    </p>
+                </div>
+
+                <div class="fourtwo" id="section4.2">
+                    <h3>4.2. Use of linux as File Server</h3>
+                    <p>
+                        These days, the sharing of files has become a necessity in any business environment. Allowing multiple employees to create and edit files in a common folder can greatly improve collaboration efforts in any project.
+                        <br><br>
+                        While sharing files via a web server is common in a wide area network environment, there are easier ways to do that within a local network. There are two basic methods for sharing files in a local network environment:
+                        <ul style="list-style-type: disc;">
+                            <li>peer-to-peer</li>
+                            <li>Client/server</li>
+                        </ul>
+                        <p>
+                            In a peer-to-peer network, one workstation enables another workstation to access files stored locally on its hard drive. This method allows collaboration between two employees on a small local network but becomes somewhat difficult if you need to share data between more than two people.
+                        </p>
+                        <br>
+                        <p>
+                            The client-server method of file sharing utilizes a centralized file server for sharing files that multiple clients can access and modify as needed. However, with the centralized file server, an administrator must control who has access to which files and folders, protecting them from unauthorized access.
+                        </p>
+
+                    </p>
+                </div>
+
+                <div class="fourthree" id="section4.3">
+                    <h3>4.3. Use of linux as DNS server</h3>
+                    <p>
+                        Linux is widely used as a DNS (Domain Name System) server. Linux serves as an excellent platform for hosting DNS services:
+                        <ol type="i">
+                            <li>
+                                <b>BIND (Berkeley Internet Name Domain):</b> is the most commonly used DNS server software on Linux. It is robust, feature-rich, and highly configurable, making it suitable for a wide range of DNS server deployments, from small networks to large enterprises.
+                            </li>
+                            <li>
+                                <b>Powerful Configuration Options:</b> Linux offers extensive configuration options for DNS servers, allowing administrators to customize settings such as zone files, DNSSEC (Domain Name System Security Extensions), caching behavior, and forwarding rules. This flexibility enables fine-tuning of DNS server performance and security according to specific requirements.
+                            </li>
+                            <li>
+                                <b>High Performance: </b>Linux provides excellent performance for DNS resolution, handling thousands of queries per second with low latency. DNS caching mechanisms help reduce response times by storing frequently requested DNS records locally, improving overall performance and responsiveness.
+                            </li>
+                            <li>
+                                <b>Security:</b> Linux-based DNS servers benefit from the strong security features inherent in the operating system, such as access controls, firewall capabilities, and regular security updates. Administrators can implement best practices for securing DNS servers, including limiting access to authorized clients, enabling DNSSEC to protect against DNS spoofing and cache poisoning attacks, and monitoring DNS traffic for anomalies.
+                            </li>
+                            <li>
+                                <b>Integration with Other Services:</b> Linux DNS servers can be seamlessly integrated with other network services and infrastructure components, such as DHCP (Dynamic Host Configuration Protocol) servers, LDAP (Lightweight Directory Access Protocol) directories, and email servers. This integration simplifies network administration tasks and enhances overall network functionality.
+                            </li>
+                            <li>
+                                <b>Open Source Ecosystem:</b> Linux DNS servers benefit from the vibrant open-source ecosystem, with a wealth of community-contributed tools, utilities, and documentation available to support deployment, configuration, and troubleshooting. Administrators can leverage these resources to effectively manage and maintain their DNS infrastructure.
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div class="fourfour" id="section4.4">
+                    <h3>4.4. Use of linux as Mail Server</h3>
+                    <p>
+                        At one time, email was the backbone of the Internet. Just about everyone had an email address, and it was crucial to be plugged into an email server to communicate with the world. While these days newer technology is taking over (such as texting, tweeting, and messaging), email is still a vital operation for most Internet users. Just about every Linux server installation uses some type of email server package. <br><br>
+                        Instead of having one monolithic program that handles all of the pieces required for sending and receiving mail, Linux uses multiple small programs that work together in the processing of email messages. 
+                        <br><br>
+                        Linux serves as an excellent foundation for hosting mail servers:
+                        <ol type="i">
+                            <li>
+                                <b>Postfix and Sendmail: </b> offers several popular mail transfer agent (MTA) software packages, such as Postfix and Sendmail, which are widely used for routing and delivering email messages. These MTAs are highly configurable, secure, and efficient, making them suitable for handling email traffic in both small-scale and large-scale environments.
+                            </li>
+                            <li>
+                                <b>Dovecot and Cyrus IMAP:</b> Linux-based mail servers often utilize Dovecot or Cyrus IMAP as the mail delivery agent (MDA) or IMAP/POP3 server. These software packages provide IMAP (Internet Message Access Protocol) and POP3 (Post Office Protocol) functionality, allowing users to access their email messages from remote clients securely.
+                            </li>
+                            <li>
+                                <b>Integration with Authentication Mechanisms:</b> Linux mail servers can integrate seamlessly with various authentication mechanisms, including LDAP (Lightweight Directory Access Protocol), Kerberos, and PAM (Pluggable Authentication Modules). This integration enables centralized user authentication and authorization, simplifying user management tasks for administrators.
+
+                            </li>
+                            <li>
+                                <b>Security Features: </b> offers robust security features that are essential for mail server deployments. These include access controls, firewall capabilities, SSL/TLS encryption, and support for email authentication protocols such as SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), and DMARC (Domain-based Message Authentication, Reporting, and Conformance).
+
+                            </li>
+                            <li>
+                                <b>Anti-Spam and Anti-Virus Solutions: </b> mail servers can be augmented with anti-spam and anti-virus solutions to protect against unsolicited email (spam) and malware threats. Software packages like SpamAssassin, ClamAV, and Amavis are commonly used to filter incoming email messages for spam and malicious content before delivery.
+
+                            </li>
+                            <li>
+                                <b>Mail Filtering and Routing: </b> provides powerful tools for implementing mail filtering and routing policies. Administrators can use software like Procmail or Sieve to define custom filtering rules for sorting incoming email messages into different folders or forwarding them to specific recipients based on criteria such as sender, recipient, or message content.
+
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+            </div>
+
+<!-- ------------------------------------------- -->
+
+            <div class="section five" id="section5">
+                <div class="headline">5. File System<hr size=".1px" color="gray"></div>
+                <p>
+                    File system is a logical and physical system for organizing, managing and accessing the files and directories on a device's solid-state drive (SSD), hard-disk drive (HDD) or other media. Without a file system, the operating system (OS) would see only large chunks of data without any way to distinguish one file from the next. As data capacities increase, the efficient organization and accessibility of individual files becomes even more important in data storage.
+                </p>
+
+                <div class="structure" id="section5.1">
+                    <h3>
+                        5.1. Linux File System Structure
+                    </h3>
+                    <p>
+                        A file system mainly consists of 3 layers. From top to bottom:
+                        <ol type="i">
+                            <li>
+                                <b>Logical File System :</b> The Logical File System acts as the interface between the user applications and the file system itself. It facilitates essential operations such as opening, reading, and closing files. Essentially, it serves as the user-friendly front-end, ensuring that applications can interact with the file system in a way that aligns with user expectations.
+                            </li>
+                            <li>
+                                <b>Virtual File System :</b> The Virtual File System (VFS) is a crucial layer that enables the concurrent operation of multiple instances of physical file systems. It provides a standardized interface, allowing different file systems to coexist and operate simultaneously. This layer abstracts the underlying complexities, ensuring compatibility and cohesion between various file system implementations.
+                            </li>
+                            <li>
+                                <b>Physical File System :</b> The Physical File System is responsible for the tangible management and storage of physical memory blocks on the disk. It handles the low-level details of storing and retrieving data, interacting directly with the hardware components. This layer ensures the efficient allocation and utilization of physical storage resources, contributing to the overall performance and reliability of the file system.
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div class="working" id="section5.2">
+                   <h3>
+                    5.2. Working of file system
+                   </h3>
+                   <p>
+                    A file system stores and organizes data. It can be thought of as a type of index for all the data contained in a storage device. In addition to SSDs and HDDs, file systems are used for optical disks, flash drives and magnetic tape.
+                   </p>
+                   <br>
+                   <p>
+                    File systems specify conventions for naming files, including the maximum number of characters in a name, which characters can be used and -- in some systems -- how long the file name extension can be. In many file systems, file names are not case sensitive.
+                   </p>
+                   <br>
+                   <p>
+                    Along with a file's content data, a file system maintains metadata about the files along with other information. The metadata might include details such as the file size, creation date or location in the directory.
+                   </p>
+                   <br>
+                   <p>
+                    Most file systems organize files in a directory hierarchy, with a file's location described by its path within the directory structure. The directories -- folders in Windows -- are organized into an inverted hierarchical tree structure, with the root directory at the top. Each file is placed in a directory or subdirectory at the desired location within the tree structure.
+                   </p>
+                    <div class="fig1">
+                        <img src="https://cdn.ttgtmedia.com/rms/onlineImages/TT_tree.jpg" alt="filesystem">
+                        <div class="caption">
+                            <i>Fig 5.2.1</i>
+                        </div>
+                    </div>
+                    <p>
+                        Before files and directories can be defined on a storage medium, one or more partitions must first be created. A partition is a region of storage that the OS manages separately from other partitions, much like managing individual drives. Each partition can be formatted with a different file system to provide greater flexibility.
+                    </p>
+                    <br>
+                    <p>
+                        Separate partitions help to isolate files and operations from each other, which can benefit performance, security and maintenance. For example, a computer's SSD might contain three partitions: one for the OS files, one for the user files and one for the system's recovery files. If the file system on one partition gets corrupted, the data on a different partition should be safe.
+                    </p>
+                </div>
+
+                <div class="geometry-disk" id="section5.3">
+                    <h3>5.3. Geometry and Disk Controller</h3>
+                    <p>
+                        <b>Geometry</b> typically refers to the specifications and characteristics of a graphical user interface (GUI) window or display. It defines parameters such as the window's size, position, and geometry (shape).
+                    </p> <br>
+                    <p>
+                        When you're working with GUI applications or window managers in Linux, you may encounter the term "geometry" in various contexts:
+                    </p> <br>
+                    <ol type="i">
+                        <li>
+                            <b>Window Geometry :</b> This refers to the size and position of a window on the screen. It includes attributes such as width, height, X and Y coordinates (position), and possibly other properties like minimum and maximum sizes.
+                        </li>
+                        <li>
+                            <b>Display Resolution :</b> Display geometry can also refer to the resolution of a monitor or screen, which is represented by the number of pixels horizontally and vertically. For example, "1920x1080" represents a screen resolution of 1920 pixels wide by 1080 pixels high.
+                        </li>
+                        <li>
+                            <b>Window Manager Configuration :</b> Many Linux desktop environments and window managers allow users to configure window geometry preferences. This might include settings for window placement, snapping behavior, resizing rules, etc.
+                        </li>
+                        <li>
+                            <b>Graphics Libraries and Toolkits :</b> Developers working with GUI applications may use geometry-related functions and properties provided by graphics libraries or toolkits such as GTK, Qt, or Xlib. These libraries often offer APIs for manipulating window geometry programmatically.
+
+                        </li>
+                    </ol>
+                    <br>
+
+                    <p>
+                        <b>Disk controller</b> ,also known as a disk interface controller or storage controller, is a hardware component responsible for managing the flow of data between a computer system and one or more disk drives. It acts as an intermediary between the CPU and the storage devices, facilitating communication and data transfer operations.
+                    </p> <br>
+                    <p>
+                        Here are some key functions and features of a disk controller:
+                        <br><br>
+                        <ol type="i">
+                            <li>
+                                <b>Interface Connectivity:</b> The disk controller provides connectivity between the computer's bus architecture (e.g., SATA, SCSI, PCIe) and the disk drive(s). It ensures compatibility between the computer system and the storage devices.
+                            </li>
+                            <li>
+                                <b>Data Transfer:</b> The disk controller manages the transfer of data between the computer's memory and the disk drives. It handles read and write operations, as well as data caching and buffering to optimize performance.
+                            </li>
+                            <li>
+                                <b>Disk Access Control: </b> The disk controller controls access to the disk drives, coordinating multiple access requests from the CPU and other system components. It implements mechanisms such as bus arbitration and queuing to prioritize and schedule disk access requests.
+                            </li>
+                            <li>
+                                <b>Error Detection and Correction:</b> The disk controller may include error detection and correction mechanisms to ensure data integrity and reliability. It can detect and handle errors such as data corruption, media defects, and communication errors.
+                            </li>
+                            <li>
+                                <b>RAID Support: </b> Many disk controllers include support for RAID (Redundant Array of Independent Disks) configurations, allowing multiple disk drives to be grouped together for improved performance, reliability, and data redundancy.
+                            </li>
+                            <li>
+                                <b>Advanced Features: </b> disk controllers offer advanced features such as disk mirroring, striping, caching, and encryption. These features enhance data protection, performance, and security in storage systems.
+                            </li>
+                        </ol>
+                    </p> <br>
+                    <p>
+                        Types of Disk Controllers:
+                        <br><br>
+                        <ol type="i">
+                            <li>
+                                <b>Integrated Disk Controller:</b> Integrated disk controllers are built into the motherboard of the computer system. They are commonly found in desktops, laptops, and entry-level servers.
+
+                            </li>
+                            <li>
+                                <b>Host Bus Adapter (HBA):</b> HBAs are separate expansion cards that provide connectivity and management functions for disk drives. They are commonly used in servers and storage area network (SAN) environments.
+                            </li>
+                            <li>
+                                <b>RAID Controller:</b> RAID controllers are specialized disk controllers optimized for managing RAID configurations. They offer additional features and capabilities for RAID data protection and performance optimization.
+                            </li>
+                        </ol>
+                    </p> <br>
+                    <p>
+                        Disk controllers play a critical role in storage systems, enabling efficient and reliable data access and management. The choice of disk controller depends on factors such as the type of storage devices, performance requirements, and system architecture.
+                    </p>
+                </div>
+
+                <div class="types" id="section5.4">
+                    <h3>
+                        5.4. Types of linux File System
+                    </h3>
+                    <ol type="i">
+                        <li>
+                            <b>ext (Extended File System): </b> Implemented in 1992, it is the first file system specifically designed for Linux. It is the first member of the ext family of file systems.
+                        </li>
+                        <li>
+                            <b>ext2 :</b> The second ext was developed in 1993. It is a non-journaling file system that is preferred to be used with flash drives and SSDs. It solved the problems of separate timestamp for access, inode modification and data modification. Due to not being journaled, it is slow to load at boot time.
+                        </li>
+                        <li>
+                            <b>Xiafs: </b> Also developed in 1993, this file system was less powerful and functional than ext2 and is no longer in use anywhere.
+                        </li>
+                        <li>
+                            <b>ext3: </b> The third ext developed in 1999 is a journaling file system. It is reliable and unlike ext2, it prevents long delays at system boot if the file system is in an inconsistent state after an unclean shutdown. Other factors that make it better and different than ext2 are online file system growth and HTree indexing for large directories.
+                        </li>
+                        <li>
+                            <b>JFS (Journaled File System):</b> First created by IBM in 1990, the original JFS was taken to open source to be implemented for Linux in 1999. JFS performs well under different kinds of load but is not commonly used anymore due to the release of ext4 in 2006 which gives better performance.
+                        </li>
+                        <li>
+                            <b>ReiserFS: </b> It is a journal file system developed in 2001. Despite its earlier issues, it has tail packing as a scheme to reduce internal fragmentation. It uses a B+ Tree that gives less than linear time in directory lookups and updates. It was the default file system in SUSE Linux till version 6.4, until switching to ext3 in 2006 for version 10.2.
+                        </li>
+                        <li>
+                            <b>XFS:</b> XFS is a 64-bit journaling file system and was ported to Linux in 2001. It now acts as the default file system for many Linux distributions. It provides features like snapshots, online defragmentation, sparse files, variable block sizes, and excellent capacity. It also excels at parallel I/O operations.
+                        </li>
+                        <li>
+                            <b>SquashFS: </b> Developed in 2002, this file system is read-only and is used only with embedded systems where low overhead is needed.
+                        </li>
+                        <li>
+                            <b>Reiser4: </b> It is an incremental model to ReiserFS. It was developed in 2004. However, it is not widely adapted or supported on many Linux distributions.
+                        </li>
+                        <li>
+                            <b>ext4 :</b> The fourth ext developed in 2006, is a journaling file system. It has backward compatibility with ext3 and ext2 and it provides several other features, some of which are persistent pre-allocation, unlimited number of subdirectories, metadata checksumming and large file size. ext4 is the default file system for many Linux distributions and also has compatibility with Windows and Macintosh.
+                        </li>
+                        <li>
+                            <b>btrfs (Better/Butter/B-tree FS): </b>It was developed in 2007. It provides many features such as snapshotting, drive pooling, data scrubbing, self-healing and online defragmentation. It is the default file system for Fedora Workstation.
+                        </li>
+                        <li>
+                            <b>bcachefs: </b> This is a copy-on-write file system that was first announced in 2015 with the goal of performing better than btrfs and ext4. Its features include full filesystem encryption, native compression, snapshots, and 64-bit check summing.
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="blocks" id="section5.5">
+                    <h3>
+                        5.5. Important Data Structures
+                    </h3>
+                    <p>
+                        In Linux file systems, particularly in those based on the traditional UNIX file system architecture (like ext2, ext3, and ext4), there are three  important data structures: the boot block, superblock and I-Node:
+                        <ol type="i">
+                            <li>
+                                <b>Boot Block:</b> 
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        The boot block is the first sector of a partition or disk and contains the boot loader code necessary for booting the operating system.
+                                    </li>
+                                    <li>
+                                        It typically includes instructions on how to load the operating system kernel into memory and start the boot process.
+                                    </li>
+                                    <li>
+                                        The boot block is critical for the initial bootstrapping of the operating system and is not directly related to file system management.
+                                    </li>
+                                    <li>
+                                        In modern Linux systems, the boot block is commonly managed by boot loaders like GRUB (Grand Unified Bootloader) or LILO (LInux LOader).
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Superblock :</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        The superblock is a crucial data structure that stores metadata about the file system, including information about the file system type, size, block size, inode count, and free block/inode counts.
+                                    </li>
+                                    <li>
+                                        It is located at a fixed location within the file system, usually near the beginning, and is duplicated in multiple locations for redundancy.
+                                    </li>
+                                    <li>
+                                        The superblock is consulted by the file system driver during mount operations to understand the layout and characteristics of the file system.
+                                    </li>
+                                    <li>
+                                        It is regularly updated to reflect changes to the file system, such as the creation or deletion of files and directories.
+                                    </li>
+                                    <li>
+                                        The superblock also contains pointers to other important data structures within the file system, such as the inode table and block bitmap.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>I-Node :</b> An inode (index node) is a data structure that stores metadata about a file or directory. Each file and directory on a file system is represented by an inode. Inodes contain information such as file ownership, permissions, timestamps, file size, and pointers to the actual data blocks on the disk where the file's contents are stored.
+                                <br><br>
+                                Here are some key characteristics of inodes:
+                                <ul style="list-style-type:disc;">
+                                    <li>
+                                        <b>Unique Identifier:</b> Each inode is identified by a unique inode number (often referred to as i-number), which is assigned by the file system when the file or directory is created. The inode number serves as a unique identifier for the file or directory within the file system.
+                                    </li>
+                                    <li>
+                                        <b>Metadata Storage:</b> Inodes store metadata about files and directories, including:
+                                        <ul style="list-style-type: circle;">
+                                            <li>
+                                                File type (regular file, directory, symbolic link, device file, etc.)
+                                            </li>
+                                            <li>
+                                                Owner and group ownership
+                                            </li>
+                                            <li>
+                                                Permissions (read, write, execute) for the owner, group, and others
+                                            </li>
+                                            <li>
+                                                Timestamp indicatin the last access, modification, and status change times
+                                            </li>
+                                            <li>
+                                                File size and disk block pointers
+                                            </li>
+                                            <li>
+                                                Number of hard links pointing to the inode
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>Direct and Indirect Pointers :</b> Inodes contain pointers to data blocks on the disk where the actual file contents are stored. These pointers can be direct pointers to data blocks (for small files), indirect pointers (for larger files), or doubly and triply indirect pointers (for very large files).
+                                    </li>
+                                    <li>
+                                        <b>Fixed Size :</b> Each inode has a fixed size, which means that there is a limit to the amount of metadata that can be stored for each file or directory. This limit depends on the file system and is typically determined when the file system is created
+                                    </li>
+                                    <li>
+                                        <b>Efficient File Access: </b> The use of inodes allows for efficient access to files and directories on the file system. When a file or directory is accessed, the file system driver uses the inode to locate the corresponding data blocks on the disk, minimizing the need for costly disk seeks.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+                </div>   
+            </div>
+
+            <div class="section six" id="section6">
+                <div class="headline">
+                    6. Process Control<hr size=".1px" color="gray">
+                </div>
+                <p>
+                    Process control in Linux refers to the management and manipulation of processes running on the system. A process is an instance of a running program, and Linux provides various tools and mechanisms for controlling and interacting with processes. 
+                </p> <br>
+                <p>
+                    some key aspects of process control in Linux:
+                    <br><br>
+                    <ol type="i">
+                        <li>
+                            <b>Process Creation: </b> in Linux are created using the `fork()` system call, which creates a new child process that is a copy of the parent process. The `exec()` family of functions can then be used to replace the contents of the child process with a new program image.
+                        </li>
+                        <li>
+                            <b>Process Termination:</b> Processes can terminate voluntarily by calling the `exit()` system call or involuntarily due to errors or signals. The `kill` command can be used to send signals to processes, allowing them to be terminated gracefully or forcefully.
+                        </li>
+                        <li>
+                            <b>Process Monitoring:</b> The `ps` command is used to list currently running processes along with their process IDs (PIDs), CPU and memory usage, and other information. The `top` command provides a dynamic view of processes and system resource usage.
+                        </li>
+                        <li>
+                            <b>Process Prioritization:</b> Linux uses priority levels to schedule processes for execution on the CPU. The `nice` and `renice` commands are used to adjust the priority of processes, allowing users to control the allocation of CPU resources.
+                        </li>
+                        <li>
+                            <b>Process Synchronization: </b> provides mechanisms such as semaphores, mutexes, and condition variables for synchronizing access to shared resources among multiple processes. These synchronization primitives are typically used in multi-threaded or multi-process applications.
+                        </li>
+                        <li>
+                            <b>Signals:</b> Signals are software interrupts used to notify processes of events or to request termination. Common signals include `SIGINT` (interrupt from keyboard), `SIGTERM` (termination request), and `SIGKILL` (forceful termination). The `kill` command can be used to send signals to processes.
+                        </li>
+                        <li>
+                            <b>Process States:</b> Processes in Linux can be in various states, including:
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    <b>Running:</b> Currently executing on the CPU.
+                                </li>
+                                <li>
+                                    <b>Sleeping:</b> Waiting for an event to occur (e.g., I/O operation completion).
+                                </li>
+                                <li>
+                                    <b>Zombie:</b> Terminated but still has an entry in the process table until its parent retrieves its exit status.
+                                </li>
+                                <li>
+                                    <b>Stopped: </b>Suspended, usually in response to a `SIGSTOP` signal.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
+
+                <div class="commnds" id="section6.1">
+                    <h3>
+                        6.1. Command to display Process
+                    </h3>
+                    <p>
+                        Process can be displayed using the `ps` command. Here are some common options for the `ps` command:
+                        <ol type="i">
+                            <li>
+                                <b>Display All Processes:</b> <br>
+                                <div class="block">
+                                    ps -e
+                                </div>
+                            </li>
+                            <li>
+                                <b>Display Processes of All Users:</b> <br>
+                                <div class="block">
+                                    ps aux
+                                </div>
+                            </li>
+                            <li>
+                                <b>Display Processes with Full Format Listing:</b> <br>
+                                <div class="block">
+                                    ps -ef
+                                </div>
+                            </li>
+                            <li>
+                                <b>Display Processes Hierarchically (Tree View):</b> <br>
+                                <div class="block">
+                                    ps -ejH
+                                </div>
+                            </li>
+                            <li>
+                                <b>Display Processes with User-Oriented Output:</b> <br>
+                                <div class="block">
+                                    ps -auxww
+                                </div>
+                            </li>
+                            <li>
+                                <b>Display Processes with More Information:</b> <br>
+                                <div class="block">
+                                    ps -efl
+                                </div>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div class="attributes" id="section6.2">
+                    <h3>6.2. Process Attributes</h3>
+                    <p>
+                        Processes have various attributes that define their behavior, state, and resource utilization. Understanding these attributes is crucial for managing and monitoring processes effectively. Here are some common process attributes in Linux:
+                        <ol type="i">
+                            <li>
+                                <b>Process ID (PID):</b> A unique identifier assigned to each process when it is created. PIDs are used to reference and manage processes.
+                            </li>
+                            <li>
+                                <b>Parent Process ID (PPID):</b> The PID of the parent process that created the current process. This attribute helps establish the process hierarchy.
+                            </li>
+                            <li>
+                                <b>User and Group IDs: </b> user and group IDs associated with the process, which determine the permissions and access rights of the process.
+                            </li>
+                            <li>
+                                <b>State:</b> The current state of the process, which can include:
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        <b>Running: </b> executing on the CPU.
+                                    </li>
+                                    <li>
+                                        <b>Sleeping: </b> for an event to occur (e.g., I/O operation completion).
+                                    </li>
+                                    <li>
+                                        <b>Zombie: </b> but still has an entry in the process table until its parent retrieves its exit status.
+                                    </li>
+                                    <li>
+                                        <b>Stopped: </b>, usually in response to a signal (e.g., SIGSTOP).
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Priority:</b> The priority level assigned to the process, which determines its scheduling order on the CPU.
+                            </li>
+                            <li>
+                                <b>CPU and Memory Usage:</b> Information about the CPU and memory resources consumed by the process, including CPU utilization, memory usage, and virtual memory statistics.
+                            </li>
+                            <li>
+                                <b>Command Name and Arguments:</b> The name of the command or executable associated with the process, along with any command-line arguments provided when the process was launched.
+                            </li>
+                            <li>
+                                <b>Start Time:</b> The time when the process was started or spawned.
+                            </li>
+                            <li>
+                                <b>
+                                    Parent Process: </b> about the parent process that created the current process, including its PID, user, and command.
+                            </li>
+                            <li>
+                                <b>File Descriptors: </b> about the files, sockets, and other resources associated with the process, including open file descriptors.
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div class="states" id="section6.3">
+                    <h3>
+                        6.3. Process State
+                    </h3>
+                    <p>
+                        Processes can be in various states, reflecting their current activity or condition. Understanding these process states is crucial for system administrators and developers to monitor and troubleshoot system behavior efficiently. Here are the common process states in Linux:
+                        <ol type="i">
+                            <li>
+                                <b>Running (R):</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        A process is actively running or being executed on the CPU.
+                                    </li>
+                                    <li>
+                                        It may be using CPU resources to execute instructions.
+                                    </li>
+                                    <li>
+                                        In a multi-core or multi-processor system, multiple processes can be in the running state concurrently.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Sleeping (S):</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        A process is waiting for an event to occur before it can continue execution.
+                                    </li>
+                                    <li>
+                                        This event can be an I/O operation (e.g., reading from disk, waiting for network data), a timer, or a signal from another process.
+                                    </li>
+                                    <li>
+                                        Sleeping processes are not actively using CPU resources and are waiting for the event to complete.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Stopped (T):</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        A process has been stopped, usually by a signal (e.g., SIGSTOP).
+                                    </li>
+                                    <li>
+                                        Stopped processes are suspended and not executing any instructions.
+                                    </li>
+                                    <li>
+                                        They can be resumed later using the `fg` (foreground) or `bg` (background) commands or by sending a `SIGCONT` signal.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Zombie (Z):</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        A process that has terminated but still has an entry in the process table.
+                                    </li>
+                                    <li>
+                                        Zombie processes occur when a child process terminates, but its parent process has not yet retrieved its exit status using the `wait()` system call.
+                                    </li>
+                                    <li>
+                                        Zombie processes consume minimal system resources but indicate that there may be an issue with the parent process not properly handling child process termination.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Waiting (D):</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        A process is waiting for a specific event related to disk I/O operations.
+                                    </li>
+                                    <li>
+                                        This state is specific to the kernel and indicates that the process is waiting for data to be read from or written to disk.
+                                    </li>
+                                    <li>
+                                        Processes in this state are typically kernel threads and cannot be interrupted by signals.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Uninterruptible Sleep (U):</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        Similar to the sleeping state (S), but the process cannot be interrupted by signals.
+                                    </li>
+                                    <li>
+                                        Processes in this state are waiting for a specific event, such as I/O completion, but cannot be woken up until the event occurs.
+                                    </li>
+                                    <li>
+                                        This state is less common and typically indicates a kernel-level issue or resource contention.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div class="scheduling-processes" id="section6.3">
+                    <h3>
+                        6.4. Scheduling Process
+                    </h3>
+                    <p>
+                        Process scheduling refers to the mechanism by which the operating system decides which processes to run on the CPU and for how long. The Linux kernel employs various scheduling algorithms to efficiently manage system resources and ensure responsive and fair execution of processes. Here's an overview of process scheduling in Linux:
+                        <ol type="i">
+                            <li>
+                                <b>Scheduler Classes:</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        Linux supports multiple scheduling classes, each optimized for different types of workloads and system requirements. The main scheduler classes in Linux are:
+                                        <ul style="list-style-type: circle;">
+                                            <li>
+                                                <b>Real-Time (RT): </b> for time-sensitive applications with strict deadlines. RT processes have higher priority and are scheduled preemptively to ensure timely execution.
+                                            </li>
+                                            <li>
+                                                <b>Fair Share (CFS): </b> a fair-share scheduling algorithm that distributes CPU resources evenly among all processes, ensuring fairness and preventing starvation.
+                                            </li>
+                                            <li>
+                                                <b>Deadline (SCHED_DEADLINE): </b> tasks with real-time constraints and deadlines. Processes are scheduled based on their relative deadlines.
+                                            </li>
+                                            <li>
+                                                <b>Batch:</b> Optimized for background tasks and batch processing. Batch processes are scheduled to run when the system is idle, minimizing interference with interactive tasks.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Process Priority:</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        Each process in Linux is assigned a priority level that determines its scheduling order. Priority levels range from -20 (highest priority) to 19 (lowest priority).        
+                                    </li>
+                                    <li>
+                                        Real-time processes have fixed priorities within a predefined range, while fair-share processes have dynamic priorities adjusted by the CFS scheduler based on their CPU usage.
+                                    </li>
+                                    <li>
+                                        The `nice` command can be used to adjust the priority of processes, with lower values indicating higher priority.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Preemption :</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        Preemption allows the kernel to interrupt a running process to give CPU time to a higher-priority process. Preemption is essential for real-time and time-critical applications.
+                                    </li>
+                                    <li>
+                                        Linux supports both voluntary preemption, where processes yield the CPU voluntarily, and involuntary preemption, where the kernel forcibly preempts processes based on their priorities.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Scheduling Policies :</b>
+                                <ul style="list-style-type: disc;">
+                                    Linux provides various scheduling policies that dictate how processes are scheduled and dispatched on the CPU. Common scheduling policies include:
+                                    <ul style="list-style-type: circle;">
+                                        <li>
+                                            <b>SCHED_FIFO:</b> First In, First Out scheduling for real-time processes.
+                                        </li>
+                                        <li>
+                                            <b>SCHED_RR:</b> Round Robin scheduling for real-time processes with equal priorities.
+                                        </li>
+                                        <li>
+                                            <b>SCHED_OTHER:</b> Default scheduling policy for fair-share processes using the CFS scheduler.
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Scheduler Tuning:</b>
+                                <ul style="list-style-type: disc;">
+                                    <li>
+                                        System administrators can adjust scheduler parameters and settings to optimize system performance and responsiveness for specific workloads.
+                                    </li>
+                                    <li>
+                                        Kernel parameters and sysctl settings can be modified to fine-tune scheduler behavior, such as time slice duration, process priorities, and scheduler tick frequency.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="section seven" id="section7">
+                <div class="headline">
+                    7. System Security<hr size=".1px" color="gray">
+                </div>
+                <p>
+                    System security in Linux involves implementing various measures to protect the integrity, confidentiality, and availability of system resources and data. Here are some key aspects of system security in Linux:
+                    <ol type="i">
+                        <li>
+                            <b>User Authentication and Access Control:</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    Use strong authentication mechanisms, such as passwords, SSH keys, or multi-factor authentication (MFA), to verify the identity of users accessing the system.
+                                </li>
+                                <li>
+                                    Implement access control policies using file permissions, ownership, and access control lists (ACLs) to restrict unauthorized access to sensitive files and directories.
+                                </li>
+                                <li>
+                                    Use tools like `sudo` to enforce least privilege principles and limit administrative access to trusted users.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Firewall and Network Security:</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    Configure firewalls, such as `iptables` or `firewalld`, to filter network traffic and block unauthorized access to network services.
+                                </li>
+                                <li>
+                                    Enable network encryption protocols, such as SSH, TLS/SSL, and IPsec, to secure communications between systems and protect data from interception or tampering.
+                                </li>
+                                <li>
+                                    Regularly update and patch system software to address known vulnerabilities and protect against exploits.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>System Hardening:</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    Disable unnecessary services and daemons to reduce the attack surface and minimize potential vulnerabilities.
+                                </li>
+                                <li>
+                                    Enable security features such as SELinux (Security-Enhanced Linux) or AppArmor to enforce mandatory access controls and prevent privilege escalation.
+                                </li>
+                                <li>
+                                    Configure secure boot settings to verify the integrity of the boot process and prevent unauthorized modifications to system files and configurations.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Monitoring and Logging :</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    Implement logging mechanisms to record system events, user activities, and security-related incidents for auditing and analysis.
+                                </li>
+                                <li>
+                                    Use intrusion detection and prevention systems (IDS/IPS) to monitor network traffic and detect suspicious or malicious activity.
+                                </li>
+                                <li>
+                                    Regularly review system logs and security alerts to identify and respond to security incidents in a timely manner.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Data Encryption and Backup:</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    Encrypt sensitive data at rest and in transit using encryption tools and protocols such as GPG (GNU Privacy Guard), LUKS (Linux Unified Key Setup), and SSL/TLS.
+                                </li>
+                                <li>
+                                    Implement data backup and recovery procedures to ensure data availability and integrity in the event of system failures, data corruption, or security breaches.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Security Updates and Patch Management:</b>
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    Establish a regular schedule for applying security updates and patches to the operating system, software applications, and third-party dependencies.
+                                </li>
+                                <li>
+                                    Use package management tools such as `apt`, `yum`, or `zypper` to automate the process of updating system packages and ensure timely deployment of security fixes.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
+
+                <br>
+                <p>
+                    There are some security measures, by which Linux systems can effectively protect against unauthorized access, data breaches, and other security threats, ensuring the integrity and confidentiality of system resources and data.
+                    <ol type="i">
+                        <li>
+                            <h3>
+                                Physical Security 
+                            </h3>
+                            Physical security involves protecting the physical hardware and infrastructure of a system from unauthorized access, theft, and damage. This includes measures such as securing server rooms, using access control mechanisms like locks and biometric scanners, and monitoring physical access through surveillance cameras and alarms.
+                        </li>
+                        <li>
+                            <h3>Controlling System Access</h3>
+                            Controlling system access involves managing user accounts, authentication mechanisms, and authorization policies to ensure that only authorized users can access system resources. This includes enforcing strong password policies, using multi-factor authentication (MFA), and restricting remote access through firewalls and VPNs.
+                        </li>
+                        <li>
+                            <h3>Restricted Shells</h3>
+                            Restricted shells, such as `rbash` (restricted bash) or `rksh` (restricted korn shell), limit the capabilities of users when they log in. These shells restrict access to certain commands, directories, and system resources to prevent users from executing potentially harmful actions.
+                        </li>
+                        <li>
+                            <h3>Controlling File Access</h3>
+                            File access control involves managing permissions and access rights to files and directories on the system. This includes using file permissions (e.g., chmod), ownership (e.g., chown), and access control lists (ACLs) to restrict access to sensitive files and directories.
+                        </li>
+                        <li>
+                            <h3>File Access Commands</h3>
+                            Common file access commands in Linux include `chmod` (change file permissions), `chown` (change file ownership), and `ls` (list directory contents). These commands are used to view and modify file permissions, ownership, and other attributes.
+                        </li>
+                        <li>
+                            <h3>Access Control Lists (ACLs)</h3>
+                            ACLs are an extension of traditional file permissions that allow finer-grained control over file access. ACLs define permissions for specific users and groups beyond the owner and group associated with a file.
+                        </li>
+                        <li>
+                            <h3>Setting ACL Entries</h3>
+                            ACL entries can be set using the `setfacl` command in Linux. This command allows you to specify user and group permissions, as well as default ACLs for newly created files and directories.
+                        </li>
+                        <li>
+                            <h3>Modifying ACL Entries on a File</h3>
+                            ACL entries on a file can be modified using the `setfacl` command with appropriate options to add, modify, or remove specific ACL entries.
+                        </li>
+                        <li>
+                            <h3>Deleting ACL Entries on a File</h3>
+                            ACL entries on a file can be deleted using the `setfacl` command with the `-x` option followed by the entry to be deleted.
+                        </li>
+                        <li>
+                            <h3>Restricting FTP</h3>
+                            Restricting FTP access involves configuring the FTP server (e.g., vsftpd) to enforce access control policies, limit user permissions, and encrypt data transmission using protocols like FTPS or SFTP.
+                        </li>
+                        <li>
+                            <h3>Securing Super User Access</h3>
+                            Securing superuser (root) access involves implementing measures such as password protection, limiting remote root login, using sudo for privilege escalation, and auditing root activities.
+                        </li>
+                        <li>
+                            <h3>Restricting Root Access</h3>
+                            Restricting root access involves limiting the use of the root account to perform administrative tasks and encouraging the use of regular user accounts with sudo privileges for routine activities.
+                        </li>
+                        <li>
+                            <h3>Monitoring Super User Access</h3>
+                            Monitoring superuser access involves logging and auditing root activities using tools like auditd, syslog, and centralized logging solutions. This helps track changes made by root users and detect unauthorized activities.
+                        </li>
+                        <li>
+                            <h3>TCP Wrappers</h3>
+                            TCP wrappers provide access control and monitoring for network services by filtering incoming connections based on IP addresses, hostnames, and other criteria. Configuration files like `/etc/hosts.allow` and `/etc/hosts.deny` control access to services configured to use TCP wrappers.
+                        </li>
+                    </ol>
+                </p>
+        
+            </div> 
+
+            <div class="section eight" id="section8">
+                <div class="headline">
+                    8. Dynamic Host Configuration Protocol<hr size=".1px" color="gray">
+                </div>
+                <p>
+                    DHCP is a network protocol used to automatically assign IP addresses, subnet masks, default gateways, DNS servers, and other network configuration parameters to devices on a network.
+                    <br><br>
+                    It simplifies network administration by dynamically allocating and managing IP addresses without manual intervention and it operates based on a client-server model, where DHCP servers centrally manage IP address allocation and lease management for client devices.
+                </p>
+
+                <div class="leasetime" id="section8.1">
+                    <h3>8.1. DHCP Leased Time</h3>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            DHCP leases are temporary assignments of IP addresses to client devices.
+                        </li>
+                        <li>
+                            The lease time determines how long a client can use the assigned IP address before it expires and needs to be renewed.
+                        </li>
+                        <li>
+                            Lease times are specified in seconds or minutes and can be configured by DHCP administrators based on network requirements.
+                        </li>
+                        <li>
+                            Shorter lease times allow for more dynamic IP address management and quicker reallocation of addresses, while longer lease times reduce DHCP server overhead and network traffic.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scope" id="section8.2">
+                    <h3>8.2. DHCP Scopes</h3>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            DHCP scopes define ranges of IP addresses that the DHCP server can allocate to client devices within a specific subnet.
+                        </li>
+                        <li>
+                            Each scope may include configuration parameters such as subnet mask, default gateway, DNS servers, and lease duration.
+                        </li>
+                        <li>
+                            Multiple scopes can be configured on a DHCP server to serve different subnets or VLANs within the network.
+                        </li>
+                        <li>
+                            DHCP administrators define scope parameters to ensure proper IP address allocation and network configuration for client devices.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="IP" id="section8.3">
+                    <h3>8.3. DHCP IP Address Allocation Types</h3>
+                        <p>
+                            DHCP supports three types of IP address allocation :
+                            <ul style="list-style-type: disc;">
+                                <li>
+                                    <b>Static Allocation:</b> IP addresses are manually assigned to specific devices based on their MAC addresses. Static assignments ensure that devices always receive the same IP address.
+                                </li>
+                                <li>
+                                    <b>Dynamic Allocation:</b> IP addresses are assigned dynamically from a pool of available addresses. DHCP servers manage a pool of addresses and assign them to clients as needed.
+                                </li>
+                                <li>
+                                    <b>Automatic Allocation:</b> IP addresses are permanently assigned to devices, but other configuration parameters (e.g., subnet mask, default gateway) are provided dynamically by the DHCP server.
+                                </li>
+                            </ul>
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="DHCP" id="section8.4">
+                    <h3>8.4. Planning DHCP Deployment:</h3>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            DHCP deployment planning involves assessing network requirements, addressing schemes, and scalability considerations.
+                        </li>
+                        <li>
+                            Factors to consider include the number of devices on the network, subnetting requirements, IP address range allocation, lease durations, and redundancy requirements.
+                        </li>
+                        <li>
+                            DHCP administrators should plan for sufficient DHCP server capacity, fault tolerance, and load balancing to ensure reliable IP address allocation and network availability.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="confi" id="section8.5">
+                    <h3>
+                        8.5. DHCP Configuration Files
+                    </h3>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            DHCP server configuration files contain settings and parameters for defining DHCP scopes, options, and server behavior.
+                        </li>
+                        <li>
+                            In the ISC DHCP server, the main configuration file is typically named `dhcpd.conf`.
+                        </li>
+                        <li>
+                            Configuration files specify DHCP pool ranges, lease durations, subnet masks, default gateways, DNS servers, and other options.
+                        </li>
+                        <li>
+                            Administrators can customize DHCP configuration files to meet specific network requirements and policies.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="configclient" id="section8.6">
+                    <h3>
+                        8.6. Configuration of DHCP Clients
+                    </h3>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            DHCP clients are configured to obtain network settings automatically from DHCP servers.
+                        </li>
+                        <li>
+                            Client configuration settings vary depending on the operating system and network configuration tools used.
+                        </li>
+                        <li>
+                            In most cases, DHCP client configuration involves specifying the interface to use for DHCP, enabling DHCP client services, and optionally configuring additional parameters such as hostname, domain name, and DNS servers.
+                        </li>
+                        <li>
+                            DHCP clients request IP addresses and other configuration parameters from DHCP servers during system startup or network interface activation.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="manualconfig" id="section8.7">
+                    <h3>
+                        8.7. Manually Configuring DHCP in Linux
+                    </h3>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            To manually configure a Linux system as a DHCP server, administrators typically install and configure a DHCP server package such as ISC DHCP or dnsmasq.
+                        </li>
+                        <li>
+                            The main DHCP server configuration file (`dhcpd.conf` for ISC DHCP) is used to define DHCP scopes, options, and server settings.
+                        </li>
+                        <li>
+                            Administrators customize the configuration file to specify IP address ranges, lease durations, subnet masks, default gateways, DNS servers, and other options as needed.
+                        </li>
+                        <li>
+                            Once the configuration is complete, the DHCP server daemon is started, and automatic startup is enabled to ensure that the DHCP service is available whenever the system is booted.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+           <!--
+
+            <div class="fig2">
+                <img src="BNN.png" alt="ANN">
+                <div class="caption"><i>Fig 6.2</i>
+                </div>
+            </div>
+
+            <div class="fig1">
+                <img src="Neural-Networks-Architecture.png" alt="ANN">
+                <div class="caption"><i>Fig 6.1</i></div>
+            </div>
+
+            -->
+
+
+        </div>
+
+        </div>
+
+    </div>
+
+    
+    <footer>
+        This is footer
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $("#scrollToTop").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+            });
+        });
+    </script>
+    
+</body>
+</html>
