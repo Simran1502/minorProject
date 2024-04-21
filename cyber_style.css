@@ -5,7 +5,76 @@ body{
     color: aliceblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: larger;
+  
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        width: 100%;
+        height: 100px;
+        background: #ffff;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+       /* border-radius: 10px;*/
+    }
+    .navigation ul{
+        display: flex;
+        width:350px;
+    }
+    .navigation ul li{
+        position: relative;
+        list-style: none;
+        margin:2px;
+        width:80px ;
+        height:80px;
+        padding:7px;
+        z-index:1;
+    }
+    .navigation ul li a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+        font-weight: 550;
+        text-decoration: none;
     
+    }
+    .navigation ul li a .icon{
+        color:#000000;
+    
+    }
+    .navigation ul li a .text{
+        color:#000000;
+        text-decoration: none;
+    
+    }
+    
+    .logo{
+        display:flex;
+        justify-content:space-around;
+        height: 100px;
+        width: 100px;
+    
+     }
+    .logo h1{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #000;
+     }
+     .navigation button{
+        padding:5px;
+        width:80px;
+        background-color: #434343;
+        color: aliceblue;
+        border-radius: 15px;
+        margin-right: 8px;
+     }
 }
 .container{
     margin-top: 100px;
@@ -80,5 +149,4 @@ body{
     height: 300px;
     border-radius: 1.5px;
 }
-
 
