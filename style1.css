@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body{
+    height:100vh;
+    width: 95%;
+    background-color: rgba(52, 50, 50,1);
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100px;
+    background: #ffff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   /* border-radius: 10px;*/
+}
+.navigation ul{
+    display: flex;
+    width:350px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    margin:2px;
+    width:80px ;
+    height:80px;
+    padding:7px;
+    z-index:1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    text-align: center;
+    font-weight: 550;
+    text-decoration: none;
+
+}
+.navigation ul li a .icon{
+    color:#000000;
+
+}
+.navigation ul li a .text{
+    color:#000000;
+    text-decoration: none;
+
+}
+
+.logo{
+    display:flex;
+    justify-content:space-around;
+    height: 100px;
+    width: 100px;
+
+ }
+.logo h1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #000;
+ }
+ .navigation button{
+    padding:5px;
+    width:80px;
+    background-color: #434343;
+    color: aliceblue;
+    border-radius: 15px;
+    margin-right: 8px;
+ }
+
+.start{
+    margin-top: 100px;
+}
+
+.line hr{
+    margin-left: 20%;   
+}
+
+.sidenav{
+    background: rgba(52, 50, 50,.9);
+    /* border: solid 2px #00ddff; */
+    margin-top: 100px;
+	position: fixed;
+	height: 83%;
+	width: 20%;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav a
+{
+	color: #fff;
+	padding: 6px 15px 5px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.sidenav a:hover
+{
+	color: #00ddff;
+}
+
+.sidenav h3
+{
+	padding: 10px 15px 10px 20px;
+	border-bottom-style: solid;
+}
+
+.main{
+    margin-left: 22%;
+    padding: 40px 10px 40px 10px;
+    letter-spacing: 0.015rem;
+    display: inline-block;
+}
+
+.intro{
+    padding-bottom: 20px;
+}
+
+.block{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p,ol{
+    line-height: 23px;
+    /* font-size: 16px; */
+    /* font-family: Nunito,sans-serif; */
+    margin: auto 40px auto 40px;
+} 
+
+.fig1{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.fig1 img{
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 70%;
+}
+
+.fig2{
+    margin: auto;
+    width: 55%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.fig2 img{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    width: 55%;
+}
+
+.fig3{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.fig3 img{
+    background-color: aliceblue;
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 70%;
+}
+
+.fig4{
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.fig4 img{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    width: 40%;
+}
+
+.index{
+    padding-right: 100px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    /* background-color:rgb(93, 68, 193); */
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) ,rgba(0, 0, 0, 0));
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    box-shadow: 0 8px 25px 0 rgba(134, 131, 131, 0.37);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.index a{
+    text-decoration: underline;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: 400;
+    /* font-size: 18px; */
+}
+
+.index  a:hover{
+    color: yellow;
+    font-size: 20px;
+}
+
+.headline{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.containr{
+    box-sizing: content-box;
+    position: relative;
+}
+.indx{
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.indx a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.indx a i {
+    font-size: 26px; /* Adjust the icon size as needed */
+    color: #00ffb7; /* Change the icon color as needed */
+}
+
+table,th,td{
+    margin: 40px;
+    margin-bottom: 10px;
+    padding: 15px 10px 15px 10px;
+    border: 1px solid;
+    border-color: aliceblue;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+table.alt{
+    text-align:left;
+}
+
+#frame{
+    box-sizing:border-box;
+    border: 1px solid white;
+    margin: 20px;
+    height: 250px;
+    width: auto;
+}
+
+.table2{
+    width: 70%;
+    margin: auto;
+}
+
+table{
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+.next{
+    width: 100%;
+    /* height: 40px; */
+    height: 40px;
+    position: fixed;
+    bottom: -42px;
+    background-color: rgba(52, 50, 50,.95);
+    text-align: center;
+    text-decoration: none;
+    /* font-size: 18px; */
+    margin-bottom: 60px;
+}
+
+.next a{
+    color: #fffbfb;
+    text-decoration: underline;
+}
+
+.next a:hover{
+    font-size: 22px;
+    color: #00ddff;
+}
+
+.sectionten a{
+    color: #00ffb7;
+}
+footer{
+    background-color: rgb(70, 69, 69);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 600px)
+{
+
+	.sidenav
+	{
+		padding-top: 15px;
+		width: 155px;
+
+	}
+	.sidenav a
+	{
+		padding-left: 16px;
+		font-size: 16px;
+	}
+	.main
+	{
+		margin-left: 45%;
+		font-size: 15px;
+	}
+	p
+	{
+		display: inline-block;
+	}
+}
